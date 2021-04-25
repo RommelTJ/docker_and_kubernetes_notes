@@ -39,6 +39,9 @@ Logs:
 - `docker logs <CONTAINER_ID>`
 - `docker logs <CONTAINER_NAME> -f`
 
+Interactive Mode:
+- `docker run -it <CONTAINER_ID>`
+- `docker start -ai <CONTAINER_NAME>`
 
 ### Listing
 

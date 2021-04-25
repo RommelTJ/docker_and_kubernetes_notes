@@ -20,18 +20,30 @@ TODO
 
 ## Containers
 
-## Naming
+### Naming
 
 TODO
 
-## Configuring
+### Configuring
 
 TODO
 
-## Listing
+### Listing
+
+List running containers:  
+`docker ps`
+
+List all containers:  
+`docker ps -a`
+
+### Removing
 
 TODO
 
-## Removing
+### Stopping and Restarting
 
-TODO
+Stopping:  
+`docker stop <CONTAINERID>`
+
+Restarting a stopped container:  
+`docker start <CONTAINER>`

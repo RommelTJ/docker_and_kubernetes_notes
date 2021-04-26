@@ -24,6 +24,9 @@ Removing images:
 Removing all unused images:  
 - `docker image prune`
 
+Removing a container automatically when it exits:  
+- `docker run --rm`
+
 ## Containers
 
 ### Naming

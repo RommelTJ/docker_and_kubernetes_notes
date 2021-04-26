@@ -13,7 +13,8 @@ Listing images:
 
 ### Analyzing
 
-TODO
+Inspecting images:  
+- `docker image inspect <CONTAINER_ID>`
 
 ### Removing
 

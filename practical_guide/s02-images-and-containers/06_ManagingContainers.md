@@ -4,7 +4,11 @@
 
 ### Tagging
 
-TODO
+Tagging an image:  
+- `docker build -t goals:latest .`
+- Image tags consist of a `name:tag` parts.
+- The name defines the group of possible more specialized images
+- The tag defines a specialized image within a group of images.
 
 ### Listing
 
@@ -32,7 +36,8 @@ Removing a container automatically when it exits:
 
 ### Naming
 
-TODO
+Naming a container:  
+- `docker run -p 3000:80 -d --rm --name goalsapp 044ae05e172d`
 
 ### Configuring
 

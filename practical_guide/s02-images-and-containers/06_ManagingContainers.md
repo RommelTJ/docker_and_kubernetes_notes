@@ -53,6 +53,11 @@ Interactive Mode:
 - `docker run -it <CONTAINER_ID>`
 - `docker start -ai <CONTAINER_NAME>`
 
+Copying files or folders into a running container or out of a running container:  
+- `docker cp temp/test.txt <CONTAINER_NAME>:<PATH>`
+- `docker cp frosty_noether:/test test.txt`
+
+
 ### Listing
 
 List running containers:  

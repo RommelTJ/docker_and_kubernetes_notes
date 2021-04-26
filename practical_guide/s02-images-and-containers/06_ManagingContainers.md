@@ -8,7 +8,8 @@ TODO
 
 ### Listing
 
-TODO
+Listing images:  
+- `docker images`
 
 ### Analyzing
 
@@ -16,7 +17,12 @@ TODO
 
 ### Removing
 
-TODO
+Removing images:  
+- `docker rmi <IMAGE_ID>`
+- You can only remove images if no containers are using them.
+
+Removing all unused images:  
+- `docker image prune`
 
 ## Containers
 
@@ -53,7 +59,12 @@ List all containers:
 
 ### Removing
 
-TODO
+Removing an individual container:  
+- `docker rm <CONTAINER_ID>`
+- `docker rm <CONTAINER_NAME> <CONTAINER_NAME>`
+
+Removing all stopped containers:  
+- `docker container prune`
 
 ### Stopping and Restarting
 

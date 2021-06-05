@@ -27,3 +27,6 @@ Under Network Settings (IP Address)
 ```shell
 docker container inspect mongodb
 ```
+
+But it's more elegant if you add containers to the network. 
+See [02_ContainerNetworks](./02_ContainerNetworks.md).

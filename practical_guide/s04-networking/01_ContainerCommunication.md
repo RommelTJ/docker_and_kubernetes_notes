@@ -10,3 +10,7 @@
 
 Out of the box, containers can send request to the WWW. 
 You don't need any special setup.
+
+## Container to Local Host Machine
+
+Use `host.docker.internal` as a domain.

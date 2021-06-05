@@ -14,3 +14,16 @@ You don't need any special setup.
 ## Container to Local Host Machine
 
 Use `host.docker.internal` as a domain.
+
+## Container to Container
+
+Setting up containerized mongo: 
+```shell
+docker run -d --name mongodb mongo
+```
+
+Getting IP Address for Mongo:
+Under Network Settings (IP Address)
+```shell
+docker container inspect mongodb
+```

@@ -28,3 +28,18 @@ docker run --name mongodb --rm -d --network goals-net mongo
 docker run --name goals-backend --rm -d --network goals-net -p 80:80 goals-node
 docker run --name goals-frontend --rm -p 3000:3000 -it goals-react
 ```
+
+## Adding Data Persistence to MongoDB with Volumes
+
+Before this, if we stop mongodb and rerun it, it works but the data is gone.
+If you want the data to be persisted, you need to add volumes to mongodb.
+
+Using a Named Volume:
+```shell
+docker run --name mongodb -v data:/data/db --rm -d --network goals-net mongo
+```
+
+Securing the mongodb:
+```shell
+docker run --name mongodb -v data:/data/db --rm -d --network goals-net -e MONGO_INITDB_ROOT_USERNAME=rommeladmin -e MONGO_INITDB_ROOT_PASSWORD=secret mongo
+```

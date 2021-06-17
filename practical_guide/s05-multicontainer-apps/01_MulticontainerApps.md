@@ -43,3 +43,26 @@ Securing the mongodb:
 ```shell
 docker run --name mongodb -v data:/data/db --rm -d --network goals-net -e MONGO_INITDB_ROOT_USERNAME=rommeladmin -e MONGO_INITDB_ROOT_PASSWORD=secret mongo
 ```
+
+### Volumes, Bind Mounts and Polishing for the NodeJS Container
+
+Want to:
+* add a bind mount for live data, 
+* add a named volume for logs, and 
+* tell the container to not overwrite node_modules: 
+```shell
+docker run --name goals-backend -v /Users/rommel/Documents/github/play/docker_and_kubernetes/docker_and_kubernetes_notes/practical_guide/s05-multicontainer-apps/multi-01-starting/backend:/app -v logs:/app/logs -v /app/node_modules --rm -d --network goals-net -p 80:80 goals-node
+```
+
+Want to fix the node server so that it restarts the server on changes (nodemon): 
+```shell
+Update package.json
+Update Dockerfile
+docker build -t goals-node .
+docker run --name goals-backend -v /Users/rommel/Documents/github/play/docker_and_kubernetes/docker_and_kubernetes_notes/practical_guide/s05-multicontainer-apps/multi-01-starting/backend:/app -v logs:/app/logs -v /app/node_modules --rm -d --network goals-net -p 80:80 goals-node
+```
+
+Want to update for mongo environment variables:
+```shell
+docker run --name goals-backend -v /Users/rommel/Documents/github/play/docker_and_kubernetes/docker_and_kubernetes_notes/practical_guide/s05-multicontainer-apps/multi-01-starting/backend:/app -v logs:/app/logs -v /app/node_modules -e MONGODB_USERNAME=rommeladmin -e MONGODB_PASSWORD=secret --rm -d --network goals-net -p 80:80 goals-node
+```

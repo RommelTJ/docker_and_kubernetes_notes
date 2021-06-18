@@ -66,3 +66,9 @@ Want to update for mongo environment variables:
 ```shell
 docker run --name goals-backend -v /Users/rommel/Documents/github/play/docker_and_kubernetes/docker_and_kubernetes_notes/practical_guide/s05-multicontainer-apps/multi-01-starting/backend:/app -v logs:/app/logs -v /app/node_modules -e MONGODB_USERNAME=rommeladmin -e MONGODB_PASSWORD=secret --rm -d --network goals-net -p 80:80 goals-node
 ```
+
+### Live Source Code Updates for the React Container (with Bind Mounts)
+
+```shell
+docker run -v /Users/rommel/Documents/github/play/docker_and_kubernetes/docker_and_kubernetes_notes/practical_guide/s05-multicontainer-apps/multi-01-starting/frontend/src:/app/src --name goals-frontend --rm -p 3000:3000 -it goals-react
+```

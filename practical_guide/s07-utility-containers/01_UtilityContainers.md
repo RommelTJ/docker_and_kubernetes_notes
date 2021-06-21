@@ -30,3 +30,22 @@ ENTRYPOINT [ "npm" ]
 docker run -it -v /Users/rommel/Documents/github/play/docker_and_kubernetes/docker_and_kubernetes_notes/practical_guide/s07-utility-containers/utility-container:/app mynpm init
 docker run -it -v /Users/rommel/Documents/github/play/docker_and_kubernetes/docker_and_kubernetes_notes/practical_guide/s07-utility-containers/utility-container:/app mynpm install express --save
 ```
+
+# Using Docker Compose
+
+docker-compose.yaml
+```shell
+version: "3.8"
+services: 
+  npm:
+    build: ./
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./:/app
+```
+
+Then run with: 
+```shell
+docker-compose run --rm npm init
+```

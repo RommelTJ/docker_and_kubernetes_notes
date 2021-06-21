@@ -5,15 +5,31 @@ services:
     container_name: "mongodb"
     volumes:
       - data:/data/db
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: rommeladmin
-      MONGO_INITDB_ROOT_PASSWORD: secret
-    # env_file:
-      # - ./relative/path/to/file.env
+    # environment:
+      # MONGO_INITDB_ROOT_USERNAME: rommeladmin
+      # MONGO_INITDB_ROOT_PASSWORD: secret
+    env_file:
+      - ./env/mongo.env
     # networks:
       # - goals-net
-  # backend:
+  backend:
+    build: ./backend
+    # build:
+      # context: ./backend
+      # dockerfile: Dockerfile
+      # docker build -t goals-node .
+    ports:
+      - "80:80"
+    volumes:
+      - ./backend:/app
+      - logs:/app/logs
+      - /app/node_modules
+    env_file:
+      - ./env/backend.env
+    depends_on:
+      - mongodb
   # frontend:
 
 volumes:
   data:
+  logs:

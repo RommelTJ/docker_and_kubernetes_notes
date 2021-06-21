@@ -21,3 +21,12 @@ docker run -it node npm init
 docker build -t node-util .
 docker run -it -v /Users/rommel/Documents/github/play/docker_and_kubernetes/docker_and_kubernetes_notes/practical_guide/s07-utility-containers/utility-container:/app node-util npm init
 ```
+
+## Utilizing ENTRYPOINT
+
+Entry point is a way to prefix the commands. So instead of calling "npm init" you could just call "init"
+```shell
+ENTRYPOINT [ "npm" ]
+docker run -it -v /Users/rommel/Documents/github/play/docker_and_kubernetes/docker_and_kubernetes_notes/practical_guide/s07-utility-containers/utility-container:/app mynpm init
+docker run -it -v /Users/rommel/Documents/github/play/docker_and_kubernetes/docker_and_kubernetes_notes/practical_guide/s07-utility-containers/utility-container:/app mynpm install express --save
+```

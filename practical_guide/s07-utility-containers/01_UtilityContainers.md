@@ -2,3 +2,7 @@
 
 "Utility Containers" is not an official term. It's a term to define containers that are not
 application containers. They only have an environment. They run tasks.
+
+## Why would you use them?
+
+Say you wanted to scaffold a project similar to npm init. You could use a container to do this.

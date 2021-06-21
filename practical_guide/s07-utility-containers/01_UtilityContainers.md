@@ -6,3 +6,11 @@ application containers. They only have an environment. They run tasks.
 ## Why would you use them?
 
 Say you wanted to scaffold a project similar to npm init. You could use a container to do this.
+
+## Different ways of running commands in containers
+
+```shell
+docker run -it -d node
+docker exec -it lucid_jones npm init
+docker run -it node npm init
+```

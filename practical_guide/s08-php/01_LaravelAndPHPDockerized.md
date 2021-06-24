@@ -12,3 +12,9 @@ Target Setup:
 * Composer (Utility Container)
 * Laravel Artisan (Utility Container)
 * npm (Utility Container)
+
+## Creating a Laravel App via Composer Container
+
+```shell
+docker-compose run --rm composer create-project --prefer-dist laravel/laravel .
+```

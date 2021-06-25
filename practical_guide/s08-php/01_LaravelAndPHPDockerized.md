@@ -18,3 +18,14 @@ Target Setup:
 ```shell
 docker-compose run --rm composer create-project --prefer-dist laravel/laravel .
 ```
+
+## Launching only some Docker compose services
+
+```shell
+docker-compose up -d server php mysql
+```
+
+To force rebuild if required:
+```shell
+docker-compose up -d --build server php mysql
+```

@@ -16,3 +16,15 @@
 - Containerized apps might need a build step (e.g. React apps)
 - Multi-container projects might need to be split across multiple hosts / remote machines
 - Trade-offs between control and responsibility might be worth it!
+
+## Deployment Process and Providers
+
+Consider a standalone NodeJS app. No database.
+- 1 image and container
+- Install Docker on a remote host, push and pull image, run container based on image on remote host
+
+### Hosting Providers
+
+- AWS
+- AZURE
+- GOOGLE CLOUD

@@ -29,3 +29,9 @@ To force rebuild if required:
 ```shell
 docker-compose up -d --build server php mysql
 ```
+
+### Adding more utility containers
+
+```shell
+docker-compose run --rm artisan migrate 
+```

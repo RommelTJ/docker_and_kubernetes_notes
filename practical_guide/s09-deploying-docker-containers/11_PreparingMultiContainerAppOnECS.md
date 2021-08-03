@@ -18,3 +18,17 @@
 11. Under environment, add `node,app.js`
 12. Under environment variables, add environment variables (3 total). For MONGODB_URL, set the value to `localhost`.
 13. Click add.
+14. For MongoDB, add a new container to same Task
+15. Enter name and Image `mongo`. For port, map 27017.
+16. For environment variables, add environment variables (2 total).
+17. Click add.
+18. Click Create.
+19. Clusters > goals-app > Services > Create
+20. Select Fargate and new Task Definition we just created
+21. Number of Tasks = 1, service name = goals-service, Click Next
+22. Use the VPC that was created with your cluster. Add subnets. Auto-assign IP. Application Load Balancer. 
+23. Click EC2 Console > Create Application Load Balancer > Any name, internet facing, expose port 80, same VPC > Next
+\> Next > Next > IP Target type > Next > Next > Create
+24. Go back to ECS. Refresh. Select Load balancer and map it to port 80.
+25. Click Next > Next > Create Service.
+

@@ -21,3 +21,12 @@ a load balancer. Click Next.
 
 There's more resources on academind.com.
 
+## Updating Managed Containers
+
+1. Make a change.
+2. Run docker build.
+3. Tag it again.
+4. Push to Docker Hub.
+5. Go to Clusters > Defaults > Task Definition
+6. Create new revision. Keep everything the same. Click Create. AWS ECS will use the latest version automatically.
+7. Actions > Update Service > Review> Update Service

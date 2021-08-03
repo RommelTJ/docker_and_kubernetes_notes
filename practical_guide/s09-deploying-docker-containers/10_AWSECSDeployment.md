@@ -17,3 +17,7 @@ a load balancer. Click Next.
 8. View Service.
 9. Get the IP from the Task and you're good!
 
+## More on AWS
+
+There's more resources on academind.com.
+

@@ -22,3 +22,7 @@
   * Optimization script that needs to be executed AFTER development but BEFORE deployment
 * Deployment and Production Setups are not equal
 * We need to build first, then run the app in a server.
+
+## Creating a "build-only" container
+
+See Dockerfile.prod under frontend.

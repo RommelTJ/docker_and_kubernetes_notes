@@ -17,3 +17,18 @@
 15. Go to MongoDB Atlast, under Database Access, set a user and password for the DB
 16. Update backend.env file with new user/pass.
 17. Build image again. Run.
+
+## Using MongoDB Atlas in Production
+
+1. In ECS, Task Definitions > latest > New revision
+2. Remove mongodb container
+3. Remove volume
+4. Remove EFS resources
+5. Remove Security Group for EFS
+6. Update backend container. Update MONGODB Environment variables.
+7. Click Update
+8. Click Create
+9. Redeploy service
+10. Rebuild image
+11. Push to Docker Hub
+12. Update service in ECS

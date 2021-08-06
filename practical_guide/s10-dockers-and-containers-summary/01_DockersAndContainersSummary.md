@@ -46,3 +46,11 @@
   * Option 1: Determine container IP and use that. But it might change and it's a lot of manual work.
   * Option 2: Create a Docker Network and add containers to it. Containers can use each other's name as request addresses.
 
+## Docker Compose
+
+* Repeating long docker build and docker run commands gets annoying, especially when working with multiple containers
+* Docker Compose allows you to pre-define build and run configuration in a .yaml file
+  * `docker-compose up`
+    * Build missing images and start all containers
+  * `docker-compose down`
+    * Stop all started containers

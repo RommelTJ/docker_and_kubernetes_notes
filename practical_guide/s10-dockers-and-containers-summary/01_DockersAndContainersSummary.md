@@ -15,3 +15,19 @@
   * Blueprints for containers
   * Read-Only / Does not run
   * Can be built + shared
+
+## Key commands
+
+* `docker build -t NAME:TAG .`
+  * Build an image based on a Dockerfile
+  * Name & versions of an image
+  * Build context
+
+* `docker run --name NAME --rm -d IMAGE`
+  * Run a container based on a remote or local image
+  * Container name, Remove once stopped, Detached mode
+
+* `docker push REPOSITORY/NAME:TAG`
+  * Share (push) an image to a Registry like DockerHub
+* `docker pull REPOSITORY/NAME:TAG`
+  * Fetch (pull) an image from a Registry like DockerHub

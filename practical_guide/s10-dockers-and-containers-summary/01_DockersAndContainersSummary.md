@@ -54,3 +54,12 @@
     * Build missing images and start all containers
   * `docker-compose down`
     * Stop all started containers
+
+## Local Host (Development) vs Remote Host (Production)
+
+* Local Host / Development
+  * Isolated, encapsulated, reproducible development environments
+  * No dependency or software clashes
+* Remote Host / Production
+  * Isolated, encapsulated, reproducible environments
+  * Easy updates: Simply replace a running container with an updated one

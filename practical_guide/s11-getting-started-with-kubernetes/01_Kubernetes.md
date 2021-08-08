@@ -57,3 +57,15 @@ Kubernetes configuration
 * The Control Plane: A collection of components that control all your worker nodes, i.e. your deployment.
 * Cluster: A set of master node and worker nodes that comprise a k8s deployment.
 * The cluster can send instructions to communicate with a cloud provider API.
+
+## Kubernetes will NOT manage your infrastructure
+
+### What Kubernetes will do
+* Create your objects (e.g. Pods) and manage them
+* Monitor Pods and re-create them, scale them, etc.
+* Kubernetes utilizes the provided cloud resources to apply your configuration / goals
+
+### What you need to do / setup
+* Create the cluster and the node instances (worker + master nodes)
+* Setup API server, kubelet and other Kubernetes services / software on nodes
+* Create other cloud provider resources that might be needed (e.g. Load Balancer, Filesystems)

@@ -46,3 +46,14 @@ Kubernetes configuration
 * It's NOT a paid service
 
 **Kubernetes is like docker-compose for multiple machines**
+
+## Kubernetes: Architecture and Core Concepts
+
+* Pod (container): Smallest possible unit in k8s. Holds a container.
+* Worker Node: A machine/virtual instance that runs the containers of your application.
+* Proxy/Config: A tool that kubernetes uses in a worker node to control the network for pods.
+* You can have multiple worker nodes. Multiple pods can be created and removed to scale your app.
+* Master Node: A machine/virtual instance that runs the control plane.
+* The Control Plane: A collection of components that control all your worker nodes, i.e. your deployment.
+* Cluster: A set of master node and worker nodes that comprise a k8s deployment.
+* The cluster can send instructions to communicate with a cloud provider API.

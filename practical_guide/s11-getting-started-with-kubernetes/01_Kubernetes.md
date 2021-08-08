@@ -69,3 +69,12 @@ Kubernetes configuration
 * Create the cluster and the node instances (worker + master nodes)
 * Setup API server, kubelet and other Kubernetes services / software on nodes
 * Create other cloud provider resources that might be needed (e.g. Load Balancer, Filesystems)
+
+## A closer look at the Worker Nodes
+
+A worker node is a computer. It is managed by the master node.  
+A pod hosts one or more application containers and their resources (volumes, IP, run configs).  
+Pods are created and managed by Kubernetes.  
+Docker runs on the Worker Node.  
+Kubelet runs on the Worker Node. A service running on a worker node that communicates with the master node.    
+A kube-proxy runs on the Worker Node. A service that manages node and pod network configurations.  

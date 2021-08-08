@@ -87,3 +87,15 @@ The Master Node runs:
 * Kube-Controller-Manager: Watches and controls Worker Nodes, corrects number of Pods, and more.
 * Cloud-Controller-Manager: Like Kube-Controller-Manager, but for a specific Cloud Provider. Knows how
 to interact with Cloud Provider resources.
+
+## Important Terms and Concepts
+
+* Cluster: A set of Node machines which are running the Containerized Application (Worker Nodes) or 
+control other Nodes (Master Node)
+* Nodes: Physical or virtual machines with a certain hardware capacity which hosts one or multiple Pods
+and communicates with the Cluser
+  * Master Node: Cluster Control Plane, managing the Pods across Worker Nodes
+  * Worker Node: Hosts Pods, running App Containers + resources
+* Pods: Pods hold the actual running App Containers + their required resources (e.g. volumes).
+* Containers: Normal (Docker) Containers
+* Services: A logical set (group) of Pods with a unique, Pod- and Container- independent IP Address.

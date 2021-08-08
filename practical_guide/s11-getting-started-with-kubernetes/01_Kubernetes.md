@@ -99,3 +99,11 @@ and communicates with the Cluser
 * Pods: Pods hold the actual running App Containers + their required resources (e.g. volumes).
 * Containers: Normal (Docker) Containers
 * Services: A logical set (group) of Pods with a unique, Pod- and Container- independent IP Address.
+
+## Quiz
+
+1. Kubernetes helps with deployment of more complex containerized applications.
+2. A Kubernetes Cluster is a network of machines which are split up in Worker and Master Nodes.
+3. A Worker Node is a machine which hosts running Pods / Containers.
+4. A "Pod" is a shell for a Container. It is responsible for running and containing that container plus
+any required configs and volumes.

@@ -19,3 +19,30 @@ Kubernetes (K8s) is an open-source system for automating deployment, scaling, an
 translate them to another provider
 * Just knowing Docker isn't enough!
 * Might be fine if you just want to stick with one provider
+
+## What is Kubernetes exactly?
+
+K8s is an open-source system (and de-facto standard) for orchestrating container deployments
+
+Helps with: 
+* Automatic deployment
+* Scaling and Load Balancing
+* Management
+
+Kubernetes configuration
+* A desired architecture, number of running containers, etc.
+* Send to some provider-specific setup or tool
+* Deploy to any cloud provider or remote machines (your own datacenter)
+* A standardized way of describing the to-be-created and to-be-managed resources of the K8s cluster
+* Cloud-provider-specific settings can be added
+
+### What Kubernetes IS and IS NOT
+
+* It's NOT a cloud service provider
+* It's NOT a service by a cloud service provider
+* It's not restricted to any specific cloud service provider
+* It's NOT a software you run on some machine. It's a collection of concepts and tools.
+* It's NOT an alternative to Docker
+* It's NOT a paid service
+
+**Kubernetes is like docker-compose for multiple machines**

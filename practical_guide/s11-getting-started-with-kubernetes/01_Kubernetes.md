@@ -78,3 +78,12 @@ Pods are created and managed by Kubernetes.
 Docker runs on the Worker Node.  
 Kubelet runs on the Worker Node. A service running on a worker node that communicates with the master node.    
 A kube-proxy runs on the Worker Node. A service that manages node and pod network configurations.  
+
+## A closer look at the Master Node
+
+The Master Node runs: 
+* API Server: API for the kubelets to communicate.
+* Scheduler: Watches for new pods, selects worker nodes to run them on.
+* Kube-Controller-Manager: Watches and controls Worker Nodes, corrects number of Pods, and more.
+* Cloud-Controller-Manager: Like Kube-Controller-Manager, but for a specific Cloud Provider. Knows how
+to interact with Cloud Provider resources.

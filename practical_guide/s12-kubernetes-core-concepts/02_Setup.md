@@ -17,3 +17,7 @@ Install Minikube: https://v1-18.docs.kubernetes.io/docs/tasks/tools/install-mini
 6. `minikube start --driver=virtualbox`
 7. `minikube status`
 8. `minikube dashboard`
+
+## Windows Setup
+
+Install Minikube: https://v1-18.docs.kubernetes.io/docs/tasks/tools/install-minikube/

@@ -26,3 +26,11 @@ If pod is removed, volume is removed. If pod is created, new directory is create
 If you add a replica, things are not working again.   
 The "hostPath" driver lets you set a path on the host machine, thus letting you share data between pods
 in the same machine.
+
+## A Third Volume: The "CSI" Type
+
+CSI = Container Storage Interface
+
+* A very flexible volume type.
+* Relatively new type.
+* Added so Kubernetes Team doesn't have to build a specific interfaces for cloud providers or specific drivers.

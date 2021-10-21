@@ -20,3 +20,9 @@ Volumes are attached to Pods and are Pod specific. Thus, we have to define volum
 
 Empty Dir creates a new empty directory and keeps directory alive as long as pod is alive.  
 If pod is removed, volume is removed. If pod is created, new directory is created.  
+
+## A Second Volume: The "hostPath" Type
+
+If you add a replica, things are not working again.   
+The "hostPath" driver lets you set a path on the host machine, thus letting you share data between pods
+in the same machine.

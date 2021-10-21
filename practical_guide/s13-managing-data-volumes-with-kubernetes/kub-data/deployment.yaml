@@ -14,4 +14,10 @@ spec:
     spec:
       containers:
         - name: story
-          image: rommelrico/kub-data
+          image: rommelrico/kub-data:1
+          volumeMounts:
+            - mountPath: /app/story
+              name: story-volume
+      volumes:
+        - name: story-volume
+          emptyDir: {}

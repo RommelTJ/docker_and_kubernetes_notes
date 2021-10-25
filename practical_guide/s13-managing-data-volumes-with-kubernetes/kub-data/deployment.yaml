@@ -20,6 +20,5 @@ spec:
               name: story-volume
       volumes:
         - name: story-volume
-          hostPath:
-            path: /Users/rommel/Documents/github/play/docker_and_kubernetes/docker_and_kubernetes_notes/practical_guide/s13-managing-data-volumes-with-kubernetes/hostPathVolume
-            type: DirectoryOrCreate
+          persistentVolumeClaim:
+            claimName: host-pvc

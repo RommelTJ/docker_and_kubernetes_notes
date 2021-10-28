@@ -14,4 +14,6 @@ spec:
     spec:
       containers:
         - name: users
-          image: rommelrico/kub-network-users
+          image: rommelrico/kub-network-users:latest
+        - name: auth
+          image: rommelrico/kub-network-auth:latest

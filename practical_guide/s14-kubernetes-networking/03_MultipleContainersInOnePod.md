@@ -8,5 +8,10 @@
 6. Add the service to the `users-deployment.yaml`
 7. `docker build -t rommelrico/kub-network-users .`
 8. `docker push rommelrico/kub-network-users`
+9. Modify `users-deployment.yaml` to add env localhost.
+10. `kubectl apply -f=users-deployment.yaml`
 
-XX. `kubectl apply -f=users-deployment.yaml`
+## Pod-internal Communication
+
+When doing pod-internal communication, Kubernetes allows you to use `localhost` as an address to send a request to
+another container running in the same Pod.

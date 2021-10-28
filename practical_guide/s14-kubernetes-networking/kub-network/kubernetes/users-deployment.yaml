@@ -15,5 +15,8 @@ spec:
       containers:
         - name: users
           image: rommelrico/kub-network-users:latest
+          env:
+            - name: AUTH_ADDRESS
+              value: localhost
         - name: auth
           image: rommelrico/kub-network-auth:latest

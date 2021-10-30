@@ -17,4 +17,6 @@ spec:
           image: rommelrico/kub-network-users:latest
           env:
             - name: AUTH_ADDRESS
-              value: localhost
+              # value: localhost
+              # value: "10.99.104.252"
+              value: "auth-service.default"

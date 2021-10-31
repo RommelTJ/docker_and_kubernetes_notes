@@ -16,3 +16,15 @@ Kubernetes won't set up cloud resources. Minikube does it for us locally.
   * Use a managed service (EKS)
     * Define cluster architecture
     * Services like AWS EKS.
+
+## AWS EKS vs AWS ECS
+
+AWS EKS (Elastic Kubernetes Service)
+* Managed service for Kubernetes deployments
+* No AWS-specific syntax or philosophy required
+* Use standard Kubernetes configurations and resources
+
+AWS ECS (Elastic Container Service)
+* Managed service for Container deployments
+* AWS-specific syntax and philosophy applies
+* Use AWS-specific configuration and concepts

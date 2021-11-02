@@ -1,6 +1,6 @@
 # docker_and_kubernetes_notes
 
-Version: 0.0.15 - 30 Oct 2021
+Version: 0.0.16 - 2 Nov 2021
 
 ## Description
 

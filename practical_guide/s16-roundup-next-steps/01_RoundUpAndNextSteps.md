@@ -10,4 +10,10 @@
 
 ## Related topics to explore
 
+* Examples for all Use-Cases and Programming Languages.
+* CI/CD.
+* AWS Deep Dives.
+* Other Cloud Providers.
+* Advanced Cluster or Docker Administration.
+
 ## Next Steps

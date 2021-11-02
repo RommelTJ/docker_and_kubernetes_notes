@@ -21,3 +21,10 @@ different volumes. We want to use AWS EFS. Google "AWS EFS Driver".
    4. Next
    5. Network Access: Remove security groups and replace them with the eks-efs security group.
    6. Next, Next, Create.
+
+## Creating a Persistent Volume for EFS
+
+1. Grab the efs id from AWS console.
+2. Add persistent volume config to `users.yaml`
+3. Get the EFS Storage Class from GitHub and paste it above the Persistent Volume.
+4. Update the deployment resource to include the volume.

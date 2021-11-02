@@ -28,3 +28,7 @@ AWS ECS (Elastic Container Service)
 * Managed service for Container deployments
 * AWS-specific syntax and philosophy applies
 * Use AWS-specific configuration and concepts
+
+## Diving into AWS
+
+AWS is just one example. It will cost money.

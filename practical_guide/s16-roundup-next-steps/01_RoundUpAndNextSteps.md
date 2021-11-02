@@ -17,3 +17,9 @@
 * Advanced Cluster or Docker Administration.
 
 ## Next Steps
+
+* Practice, Practice, Practice.
+* Dive into official Docker and Kubernetes Documentation.
+* Dive into Cloud Provider Documentation.
+* Explore more Docker use-cases.
+

@@ -19,3 +19,13 @@
       2. My Account > My Security Credentials > Create a New Access Key. Download the file.
       3. `aws configure` -> Enter Access Key ID and Secret Key. Etc.
       4. `aws eks --region us-east-1 update-kubeconfig --name kub-deploy-demo`. This updates kubectl.
+   3. Go to AWS EKS > Compute tab > Add Node Group
+      1. Select any name.
+      2. Enter IAM Role: Create "EC2" role with 
+         1. EKS Worker Node policy permission and 
+         2. CNI Policy and 
+         3. EC2 Container Register Read only.
+   4. Select role. Next.
+   5. Set computer and scaling configuration. Next.
+   6. Next.
+   7. Create.

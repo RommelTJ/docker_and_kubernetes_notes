@@ -29,3 +29,7 @@
    5. Set computer and scaling configuration. Next.
    6. Next.
    7. Create.
+5. Applying our configs:
+   1. `kubectl apply -f=auth.yaml -f=users.yaml`
+   2. Note that we get a URL for the External IP. You can use that to send requests.
+   3. Note that on AWS a Load Balancer is automatically created because we specify a LoadBalancer service type.

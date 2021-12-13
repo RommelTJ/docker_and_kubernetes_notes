@@ -84,3 +84,18 @@ docker ps
 Stop sends hardware signal to container (SIGTERM) to tell the process to shutdown cleanly.
 
 Kill sends hardware signal to container (SIGKILL) to abruptly shut down the container.
+
+## Multi-Command Containers
+
+```
+redis-server
+redis-cli
+set mynumber 5
+get mynumber
+```
+
+```
+docker run redis
+```
+
+Cannot use redis-cli against this redis container.

@@ -116,3 +116,16 @@ get mynumber
 * When you run a command in docker, it goes into STDIN.
 * The "-i" flag means when we execute this command, attach our terminal to the STDIN terminal.
 * The "-t" flag means make all the text show nicely formatted on the screen.
+
+## Getting a Command Prompt in a Container
+
+To open a shell in a running container:  
+```
+docker ps
+docker exec -it 773cdf779f96 sh
+> ls
+> redis-cli
+set mynumber 7
+get mynumber
+> exit
+```

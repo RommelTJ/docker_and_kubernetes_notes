@@ -129,3 +129,11 @@ set mynumber 7
 get mynumber
 > exit
 ```
+
+## Starting with a Shell
+
+```
+docker run -it busybox sh
+echo hello
+exit
+```

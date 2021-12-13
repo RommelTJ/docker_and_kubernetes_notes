@@ -50,3 +50,10 @@ docker start -a e0d8e06109ff
 ```
 
 The last command prints "hi there" again because it runs the override command.
+
+## Removing Stopped Containers
+
+```
+docker ps --all
+docker system prune
+```

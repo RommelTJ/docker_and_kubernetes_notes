@@ -99,3 +99,12 @@ docker run redis
 ```
 
 Cannot use redis-cli against this redis container.
+
+## Executing Commands in Running Containers
+
+```
+docker run redis
+docker exec -it 773cdf779f96 redis-cli
+set mynumber 6
+get mynumber
+```

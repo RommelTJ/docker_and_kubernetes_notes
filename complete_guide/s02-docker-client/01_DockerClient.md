@@ -65,3 +65,22 @@ docker create busybox echo hi there
 docker start 918a805075137eadbe7e198650c88cf7d5e9b4d943d1734a9e96c1e0feded338
 docker logs 918a805075137eadbe7e198650c88cf7d5e9b4d943d1734a9e96c1e0feded338
 ```
+
+## Stopping Containers
+
+```
+docker create busybox ping google.com
+docker start aa8bc00f997240fb074c2ef064d036b098b9263f7ed212461b682443570e82be
+docker logs aa8bc00f997240fb074c2ef064d036b098b9263f7ed212461b682443570e82be
+docker ps
+
+docker stop aa8bc00f997240fb074c2ef064d036b098b9263f7ed212461b682443570e82be
+-or-
+docker kill aa8bc00f997240fb074c2ef064d036b098b9263f7ed212461b682443570e82be
+
+docker ps
+```
+
+Stop sends hardware signal to container (SIGTERM) to tell the process to shutdown cleanly.
+
+Kill sends hardware signal to container (SIGKILL) to abruptly shut down the container.

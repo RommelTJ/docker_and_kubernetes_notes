@@ -108,3 +108,11 @@ docker exec -it 773cdf779f96 redis-cli
 set mynumber 6
 get mynumber
 ```
+
+## The purpose of the IT flag
+
+* "-it" stands for interactive terminal.
+* Every process in Linux has STDIN, STDOUT, and STDERR.
+* When you run a command in docker, it goes into STDIN.
+* The "-i" flag means when we execute this command, attach our terminal to the STDIN terminal.
+* The "-t" flag means make all the text show nicely formatted on the screen.

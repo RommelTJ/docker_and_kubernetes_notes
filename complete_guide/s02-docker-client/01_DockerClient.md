@@ -57,3 +57,11 @@ The last command prints "hi there" again because it runs the override command.
 docker ps --all
 docker system prune
 ```
+
+## Retrieving log outputs
+
+```
+docker create busybox echo hi there
+docker start 918a805075137eadbe7e198650c88cf7d5e9b4d943d1734a9e96c1e0feded338
+docker logs 918a805075137eadbe7e198650c88cf7d5e9b4d943d1734a9e96c1e0feded338
+```

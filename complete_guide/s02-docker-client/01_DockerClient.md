@@ -5,3 +5,10 @@
 ```
 docker run hello-world
 ```
+
+## Overriding Default Commands
+
+```
+docker run busybox echo hi there
+docker run busybox ls
+```

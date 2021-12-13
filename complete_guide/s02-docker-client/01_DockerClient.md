@@ -137,3 +137,15 @@ docker run -it busybox sh
 echo hello
 exit
 ```
+
+## Container Isolation
+
+Between two containers, they don't automatically share resources.
+
+```
+docker run -it busybox sh
+docker run -it busybox sh
+docker ps
+touch hithere
+ls
+```

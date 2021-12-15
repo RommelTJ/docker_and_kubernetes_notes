@@ -25,3 +25,10 @@ docker run 94de9090842b522cd3398d47ff14e645bb784bbf7b1f86f4fb65996d67271a34
 * `FROM alpine` says to use alpine as a base image.
 * `RUN apk add --update redis` tells Docker what to do.
 * `CMD ["redis-server"]` tells Docker what to execute after container is built.
+
+## What's a Base Image
+
+Writing a Dockerfile is like being given a computer with no OS and being told to install Chrome.    
+
+Alpine is a Linux OS that is optimized/suited to Docker development. It comes with a preinstalled set 
+of programs that are useful to you (installing redis). It has "apk" preinstalled.

@@ -52,3 +52,7 @@ What happens when you run `docker build .`?
   * We stop the temp container, take a file system snapshot and primary command, save it as an image.
   * This new image then gets forwarded into the next step.
 * We save the last image as the end result.
+
+## A Brief Recap
+
+Docker images are built as layers of images.

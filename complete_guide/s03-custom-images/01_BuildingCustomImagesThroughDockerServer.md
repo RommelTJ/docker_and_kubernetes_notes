@@ -32,3 +32,23 @@ Writing a Dockerfile is like being given a computer with no OS and being told to
 
 Alpine is a Linux OS that is optimized/suited to Docker development. It comes with a preinstalled set 
 of programs that are useful to you (installing redis). It has "apk" preinstalled.
+
+## The Build Process in Detail
+
+What happens when you run `docker build .`?
+
+* Docker build runs on the docker server. 
+* The "." means the build context, the set of files and folders for the container.
+* Every line of configuration in our Dockerfile corresponds to a "Step" in the terminal output.
+* Alpine checks the cache and if not found it fetches it from DockerHub.
+* When you run the apk command, it creates an intermediate container.
+  * In memory, we very temporarily create a new container out of the previous step.
+  * Command executes in temp container as a process.
+    * Ex: Downloaded Redis and dependencies, created folders, etc.
+  * We stop the temp container, take a file system snapshot, and save it as a new image.
+  * This new image then gets forwarded into the next step.
+* When CMD command runs, it looks at previous step image and creates a temp container.
+  * Container is told ["redis-server"] is its primary command.
+  * We stop the temp container, take a file system snapshot and primary command, save it as an image.
+  * This new image then gets forwarded into the next step.
+* We save the last image as the end result.

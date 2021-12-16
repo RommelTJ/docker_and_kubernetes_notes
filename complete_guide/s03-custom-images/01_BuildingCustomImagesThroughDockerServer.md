@@ -77,3 +77,20 @@ And then build again with `docker build .`,
 If you execute the build command a third time, the cache will be set for Step 3 and 4.
 
 Docker steps only run from the changed line down. Everything else is cached. The order of operation matters.
+
+## Tagging an Image
+
+```
+docker run sha256:92231d3c2669b2cb49b1f16dbe15e964c4e2315c901a24c0610b75b424959d7a
+```
+
+
+Convention for tags:  
+`DOCKER_ID`/`Repo/Project Name`:`Version`
+
+
+With tag:  
+```
+docker build -t rommelrico/redis:latest .
+docker run rommelrico/redis:latest
+```

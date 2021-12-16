@@ -56,3 +56,24 @@ What happens when you run `docker build .`?
 ## A Brief Recap
 
 Docker images are built as layers of images.
+
+## Rebuilds with Cache
+
+At every step we have a filesystem snapshot.
+
+When we add to the Dockerfile: 
+```
+RUN apk add --update gcc
+```
+
+And then build again with `docker build .`,
+* Step 1 is already cached because alpine is already downloaded from DockerHub.
+* Step 2 is already cached.
+  * Docker knows that the previous step hasn't changed.
+  * Docker knows that it has previously run the apk command on that previous step.
+* Step 3 executes because it's a new command in the Dockerfile.
+* Step 4 executes because Step 3 is a new command.
+
+If you execute the build command a third time, the cache will be set for Step 3 and 4.
+
+Docker steps only run from the changed line down. Everything else is cached. The order of operation matters.

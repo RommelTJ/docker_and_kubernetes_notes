@@ -94,3 +94,16 @@ With tag:
 docker build -t rommelrico/redis:latest .
 docker run rommelrico/redis:latest
 ```
+
+## Manual Image Generation with Docker Commit
+
+```
+docker run -it alpine sh
+apk add --update redis
+```
+
+On another terminal, take snapshot:  
+```
+docker commit -c 'CMD ["redis-server"]' c79e1620f2de
+docker run sha256:15f4742865b491923ad8196fa0cfa58b2499289b61ea739ee981bb81f872a9ad
+```

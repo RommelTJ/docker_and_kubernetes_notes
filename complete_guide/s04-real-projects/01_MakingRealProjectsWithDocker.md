@@ -10,3 +10,7 @@ Steps:
 3. Build image from Dockerfile
 4. Run image as container
 5. Connect to web app from a browser
+
+## Node Server Setup
+
+Added "simpleweb" app.

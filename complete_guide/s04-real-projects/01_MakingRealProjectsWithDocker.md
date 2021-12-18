@@ -14,3 +14,10 @@ Steps:
 ## Node Server Setup
 
 Added "simpleweb" app.
+
+## A Few Planned Errors
+
+* Need to execute "npm install" and "npm start".
+* Created Dockerfile.
+* `docker build .`
+* "npm: not found"

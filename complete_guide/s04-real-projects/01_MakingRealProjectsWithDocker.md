@@ -50,4 +50,16 @@ COPY package.json /usr/app/
 
 ## Container Port Mapping
 
+Dockerfile:  
+```
+EXPOSE 8080
+```
 
+`-p <PORT1>:<PORT2>`  
+* PORT1 = The port on your local machine.
+* PORT2 = The port inside the container.
+
+```
+docker build -t rommelrico/simpleweb .
+docker run -p 5001:8080 rommelrico/simpleweb
+```

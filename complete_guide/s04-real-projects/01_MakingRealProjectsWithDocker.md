@@ -21,3 +21,13 @@ Added "simpleweb" app.
 * Created Dockerfile.
 * `docker build .`
 * "npm: not found"
+
+## Base Image Issues
+
+* Alpine doesn't include a lot of programs by default. NPM is not one of them.
+  * We can find a different base image, or
+  * We can install what we need.
+  * We set to the node image: `node:alpine`
+  * In the docker world, "alpine" = minimal image.
+* `docker build .`
+  * Error with npm install. "ENOENT: no such file or directory, open '/usr/app/package.json'"

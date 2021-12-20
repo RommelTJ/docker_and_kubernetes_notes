@@ -36,3 +36,18 @@ Added "simpleweb" app.
 
 * We need to copy the package.json.
   * `COPY package.json .`
+
+## Copying Build Files
+
+```
+COPY package.json .
+```
+
+or
+```
+COPY package.json /usr/app/
+```
+
+## Container Port Mapping
+
+

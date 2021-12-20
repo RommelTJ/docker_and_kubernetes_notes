@@ -31,3 +31,8 @@ Added "simpleweb" app.
   * In the docker world, "alpine" = minimal image.
 * `docker build .`
   * Error with npm install. "ENOENT: no such file or directory, open '/usr/app/package.json'"
+
+## A Few Missing Files
+
+* We need to copy the package.json.
+  * `COPY package.json .`

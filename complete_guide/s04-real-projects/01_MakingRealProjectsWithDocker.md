@@ -99,3 +99,12 @@ docker run -p 8080:8080 rommelrico/simpleweb
 
 Note that Step 3, 4, 5 are no longer cached because we modified the index.js.
 
+## Minimizing Cache Busting and Rebuilds
+
+See changes in Dockerfile.   
+We minimized cache busting by separating the files that don't change from the ones that do.  
+
+```
+docker build -t rommelrico/simpleweb .
+docker run -p 8080:8080 rommelrico/simpleweb
+```

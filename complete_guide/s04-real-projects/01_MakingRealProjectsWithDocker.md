@@ -63,3 +63,25 @@ EXPOSE 8080
 docker build -t rommelrico/simpleweb .
 docker run -p 5001:8080 rommelrico/simpleweb
 ```
+
+## Specifying a Working Directory
+
+Shell:  
+```
+docker run -it rommelrico/simpleweb sh
+ls
+```
+
+Don't want to write directly to the root project directory because it can overwrite system files.
+
+In Dockerfile:  
+```
+WORKDIR /usr/app
+```
+
+Checking that docker image and container have changed to the WORKDIR:  
+```
+docker ps
+docker exec -it fe7c39048519 sh
+ls
+```

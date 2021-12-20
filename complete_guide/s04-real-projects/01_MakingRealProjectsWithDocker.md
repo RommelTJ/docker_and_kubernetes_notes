@@ -85,3 +85,17 @@ docker ps
 docker exec -it fe7c39048519 sh
 ls
 ```
+
+## Unnecessary Rebuilds
+
+You have to rebuild to get new changes:  
+```
+docker run -p 8080:8080 rommelrico/simpleweb
+<Make a change in index.json>
+<Refresh page, no changes>
+docker build -t rommelrico/simpleweb .
+docker run -p 8080:8080 rommelrico/simpleweb
+```
+
+Note that Step 3, 4, 5 are no longer cached because we modified the index.js.
+

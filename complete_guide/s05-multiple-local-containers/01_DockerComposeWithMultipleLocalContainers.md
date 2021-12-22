@@ -38,3 +38,8 @@ Docker Compose:
 * Used to start up multiple Docker containers at the same time
 * Automates long arguments we were passing to `docker run`.
 * Sets up networking for us automatically.
+
+## Docker Compose Files
+
+* Commands have to be written into `docker-compose.yml` file in the correct syntax. 
+* Then you can run the docker-compose CLI.

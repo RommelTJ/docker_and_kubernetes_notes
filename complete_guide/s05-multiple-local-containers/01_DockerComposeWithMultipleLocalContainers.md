@@ -47,3 +47,20 @@ Docker Compose:
 ## Networking with Docker Compose
 
 We update `index.js` by setting up the service name to redis. 
+
+## Docker Compose Commands
+
+Start Docker Compose Services:  
+```
+docker-compose up
+```
+
+Start and Rebuild Docker Images:  
+```
+docker-compose up --build
+```
+
+Shutting down docker compose services:  
+```
+docker-compose down
+```

@@ -43,3 +43,7 @@ Docker Compose:
 
 * Commands have to be written into `docker-compose.yml` file in the correct syntax. 
 * Then you can run the docker-compose CLI.
+
+## Networking with Docker Compose
+
+We update `index.js` by setting up the service name to redis. 

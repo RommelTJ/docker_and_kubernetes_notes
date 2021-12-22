@@ -66,3 +66,12 @@ Shutting down docker compose services:
 ```
 docker-compose down
 ```
+
+## Container Maintenance with Compose
+
+Update index.js so that it fails/crashes.
+
+```
+docker ps
+// Notice node-server crashed. Only redis-server is running
+```

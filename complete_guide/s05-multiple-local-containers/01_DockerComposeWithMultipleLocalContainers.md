@@ -60,7 +60,9 @@ Start and Rebuild Docker Images:
 docker-compose up --build
 ```
 
-Shutting down docker compose services:  
+## Stopping Docker Containers
+
+Shutting down docker compose services:
 ```
 docker-compose down
 ```

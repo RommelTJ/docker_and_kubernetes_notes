@@ -90,3 +90,12 @@ We will add a restart policy. Available policies:
   * Recommended for processes that might complete a job.
 * unless-stopped
   * Always restart unless we, the developers, forcibly stop it.
+
+## Container Status with Docker Compose
+
+List running containers using docker compose:  
+```
+docker-compose ps
+```
+
+Note that you have to run it from the same directory as that docker-compose file. It needs the yaml file.

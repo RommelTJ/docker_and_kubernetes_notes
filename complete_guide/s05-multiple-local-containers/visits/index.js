@@ -10,7 +10,7 @@ const client = redis.createClient({
 client.set('visits', 0);
 
 app.get('/', (req, res) => {
-  process.exit(0); // Making the server crash intentionally.
+  process.exit(1); // Making the server crash intentionally. Code != 0 means failure, so on-failure will restart
   client.get('visits', (err, visits) => {
     res.send('Number of visits is ' + visits);
     client.set('visits', parseInt(visits) + 1);

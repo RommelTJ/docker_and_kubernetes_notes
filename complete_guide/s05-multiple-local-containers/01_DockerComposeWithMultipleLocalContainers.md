@@ -75,3 +75,18 @@ Update index.js so that it fails/crashes.
 docker ps
 // Notice node-server crashed. Only redis-server is running
 ```
+
+## Automatic Container Restarts
+
+We will add a restart policy. Available policies:  
+* "no"
+  * Never attempt to restart container
+  * "no" has to be in quotes because in yaml 'no' is interpreted as a boolean false.
+* always
+  * Always attempt to restart container
+  * Recommended for public servers.
+* on-failure
+  * Only restart the container if the container stops with an error code.
+  * Recommended for processes that might complete a job.
+* unless-stopped
+  * Always restart unless we, the developers, forcibly stop it.

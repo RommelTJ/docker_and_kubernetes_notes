@@ -8,3 +8,16 @@ Flow:
 * Development
 * Testing
 * Deployment
+
+## Flow Specifics
+
+Development Workflow:  
+* Create a GitHub repository with a `main` and `feature` branch.
+* We work on the `feature` branch.
+* `master` changes will be automatically deployed.
+* We pull and push code into `feature` branch. Then create a pull request to merge into `main`.
+* When the pull request is created: 
+  * Travis CI workflow will pull down code and run tests.
+* When the pull request is merged:  
+  * Travis CI workflow will pull down code and run tests.
+  * If tests pass, push to AWS Hosting.

@@ -56,3 +56,11 @@ See `Dockerfile.dev`.
 docker build -f Dockerfile.dev -t rommelrico/frontend .
 docker run rommelrico/frontend
 ```
+
+## Duplicating Dependencies
+
+* Create-react-app automatically installed dependencies.   
+* At present we have dependencies from create-react-app and from running `npm install`
+* We delete the folder from our filesystem
+* `docker build -f Dockerfile.dev -t rommelrico/frontend .`
+* `docker run rommelrico/frontend`

@@ -30,3 +30,12 @@ Development Workflow:
 ## Project Generation
 
 We're going to make a simple React frontend and then containerize it.
+
+## Create React App Generation
+
+```
+npm cache clean -f
+npm install -g n
+sudo n stable
+npx create-react-app frontend
+```

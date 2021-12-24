@@ -39,3 +39,11 @@ npm install -g n
 sudo n stable
 npx create-react-app frontend
 ```
+
+## Necessary Commands
+
+```
+npm run start // Starts a development server.
+npm run test // Runs tests associated with the project
+npm run build // Builds a production version of the application
+```

@@ -64,3 +64,9 @@ docker run rommelrico/frontend
 * We delete the folder from our filesystem
 * `docker build -f Dockerfile.dev -t rommelrico/frontend .`
 * `docker run rommelrico/frontend`
+
+## Starting the Container
+
+```
+docker run -it -p 3000:3000 rommelrico/frontend 
+```

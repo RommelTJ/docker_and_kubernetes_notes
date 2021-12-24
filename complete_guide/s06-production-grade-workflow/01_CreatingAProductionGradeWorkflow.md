@@ -21,3 +21,8 @@ Development Workflow:
 * When the pull request is merged:  
   * Travis CI workflow will pull down code and run tests.
   * If tests pass, push to AWS Hosting.
+
+## Docker's Purpose
+
+* Docker is a tool in a normal development flow.
+* Docker makes some of these tasks a lot easier.

@@ -81,3 +81,16 @@ docker run -it -p 3000:3000 -v /app/node_modules -v ${pwd}:/app rommelrico/front
 ```
 
 * pwd = present working directory
+
+## Bookmarking Volumes
+
+* The binding for the /app volume does not include the `node_modules` folder.
+* Thus, `node_modules` inside the container gets cleared out/overwritten.
+* The reason is the `node_modules` reference in our container maps to nothing in our local machine.
+* The fix is to add `-v /app/node_modules`.
+* The colon syntax says to map from a folder inside the container to a folder outside the container.
+* The syntax without a colon says to use it as a placeholder and don't try to map it to an outside container.
+
+```
+docker run -it -p 3000:3000 -v /app/node_modules -v ${pwd}:/app rommelrico/frontend
+```

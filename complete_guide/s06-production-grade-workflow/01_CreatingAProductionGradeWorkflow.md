@@ -94,3 +94,12 @@ docker run -it -p 3000:3000 -v /app/node_modules -v ${pwd}:/app rommelrico/front
 ```
 docker run -it -p 3000:3000 -v /app/node_modules -v $(pwd):/app rommelrico/frontend
 ```
+
+## Shorthand with Docker Compose
+
+* See `docker-compose.yml`
+* Notice the volume "." shorthand instead of $(pwd)
+
+```
+docker-compose up
+```

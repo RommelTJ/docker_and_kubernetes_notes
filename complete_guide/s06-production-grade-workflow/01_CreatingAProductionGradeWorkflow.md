@@ -70,3 +70,14 @@ docker run rommelrico/frontend
 ```
 docker run -it -p 3000:3000 rommelrico/frontend 
 ```
+
+## Docker Volumes
+
+We need automatic restarts on running container. For that, we need volumes.  
+Instead of copying the "src" folder into the container, we add a reference to a volume on our machine.  
+
+```
+docker run -it -p 3000:3000 -v /app/node_modules -v ${pwd}:/app rommelrico/frontend
+```
+
+* pwd = present working directory

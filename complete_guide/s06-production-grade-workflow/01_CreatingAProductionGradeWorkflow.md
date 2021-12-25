@@ -92,5 +92,5 @@ docker run -it -p 3000:3000 -v /app/node_modules -v ${pwd}:/app rommelrico/front
 * The syntax without a colon says to use it as a placeholder and don't try to map it to an outside container.
 
 ```
-docker run -it -p 3000:3000 -v /app/node_modules -v ${pwd}:/app rommelrico/frontend
+docker run -it -p 3000:3000 -v /app/node_modules -v ${PWD}:/app rommelrico/frontend
 ```

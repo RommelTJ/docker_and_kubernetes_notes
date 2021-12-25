@@ -111,3 +111,12 @@ docker-compose up
 ```
 docker-compose up
 ```
+
+## Do we need copy?
+
+* Since we added a volume mount, do we still need the copy?
+* Technically we could remove the `COPY . .`
+* But we might choose to leave it in because,
+  * Maybe we no longer want to use docker-compose.yml
+  * Maybe we want a production setup.
+  * Even though it's not strictly required, it could serve as a reminder.

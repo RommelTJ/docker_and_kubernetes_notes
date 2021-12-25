@@ -103,3 +103,11 @@ docker run -it -p 3000:3000 -v /app/node_modules -v $(pwd):/app rommelrico/front
 ```
 docker-compose up
 ```
+
+## Overriding Dockerfile selection
+
+* See `docker-compose.yml`
+
+```
+docker-compose up
+```

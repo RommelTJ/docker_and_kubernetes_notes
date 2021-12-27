@@ -157,3 +157,8 @@ docker exec -it 272c9d4a01b7 sh
 ```
 
 The reason it doesn't work is because npm will start a second process to run the tests.
+
+## Need for Nginx
+
+`npm run build` requires nginx to create a production web container.   
+Nginx is required to serve the index.html and main.js files.  

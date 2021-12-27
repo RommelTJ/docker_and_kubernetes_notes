@@ -125,3 +125,14 @@ docker-compose up
 
 * Build container: `docker build -f Dockerfile.dev -t rommelrico/frontend .`
 * Run tests: `docker run -it rommelrico/frontend npm run test`
+
+## Live Updating Tests
+
+Tests don't automatically update because volume is not set up.
+
+Another approach is to attach to the existing container.
+
+To live update tests:  
+* `docker-compose up`
+* `docker ps`
+* `docker exec -it b5fe0f168fe2 npm run test`

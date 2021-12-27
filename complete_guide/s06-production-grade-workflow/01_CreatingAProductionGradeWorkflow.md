@@ -162,3 +162,12 @@ The reason it doesn't work is because npm will start a second process to run the
 
 `npm run build` requires nginx to create a production web container.   
 Nginx is required to serve the index.html and main.js files.  
+
+## Multi-Step Docker Builds
+
+* Generate Dockerfile.prod
+* Dependencies only need to execute during `npm run build`.
+* We need to install nginx before we can start nginx, obviously.
+* We will solve this in two phases:
+  * Build phase: Build up to `npm run build`.
+  * Run phase: Use nginx, copy results of npm run build, and start nginx.

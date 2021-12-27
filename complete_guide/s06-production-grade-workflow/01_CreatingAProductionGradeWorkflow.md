@@ -136,3 +136,10 @@ To live update tests:
 * `docker-compose up`
 * `docker ps`
 * `docker exec -it b5fe0f168fe2 npm run test`
+
+## Docker Compose for Running Tests
+
+Another approach to test using docker compose is as follows:  
+* Edit `docker-compose.yml` and add a new service.
+* `docker-compose up --build`
+* Downside to this approach is that we get all the output into one terminal and we can't use the terminal.

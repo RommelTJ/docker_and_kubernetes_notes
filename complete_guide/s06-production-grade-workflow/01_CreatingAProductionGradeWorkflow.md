@@ -143,3 +143,17 @@ Another approach to test using docker compose is as follows:
 * Edit `docker-compose.yml` and add a new service.
 * `docker-compose up --build`
 * Downside to this approach is that we get all the output into one terminal and we can't use the terminal.
+
+## Shortcomings on Testing
+
+Attaching to a process via another terminal window:  
+* `docker ps`
+* `docker attach 272c9d4a01b7`
+* Unfortunately, it doesn't work.
+  * Docker Compose will not allow you to enter terminal input.
+
+```
+docker exec -it 272c9d4a01b7 sh
+```
+
+The reason it doesn't work is because npm will start a second process to run the tests.

@@ -171,3 +171,7 @@ Nginx is required to serve the index.html and main.js files.
 * We will solve this in two phases:
   * Build phase: Build up to `npm run build`.
   * Run phase: Use nginx, copy results of npm run build, and start nginx.
+
+## Implementing Multi-Step Builds
+
+See `Dockerfile.prod`.

@@ -175,3 +175,10 @@ Nginx is required to serve the index.html and main.js files.
 ## Implementing Multi-Step Builds
 
 See `Dockerfile.prod`.
+
+## Running nginx
+
+```
+docker build -f Dockerfile.prod -t rommelrico/frontend .
+docker run -p 8080:80 rommelrico/frontend
+```

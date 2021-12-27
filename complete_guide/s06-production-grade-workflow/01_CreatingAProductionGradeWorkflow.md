@@ -120,3 +120,8 @@ docker-compose up
   * Maybe we no longer want to use docker-compose.yml
   * Maybe we want a production setup.
   * Even though it's not strictly required, it could serve as a reminder.
+
+## Executing Tests
+
+* Build container: `docker build -f Dockerfile.dev -t rommelrico/frontend .`
+* Run tests: `docker run -it rommelrico/frontend npm run test`

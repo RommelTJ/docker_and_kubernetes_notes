@@ -3,7 +3,7 @@
 ## Services Overview
 
 * GitHub - Free
-* Travis CI - Not Free
+* Travis CI - Free for OSS, but credit card required
 * AWS - Free, but credit card required
 
 ## GitHub Setup
@@ -19,4 +19,5 @@ When we push from our laptop, we push to GitHub. TravisCI listens to changes, an
 
 * Go to travis-ci.com
 * Sign up
-* Abort, TravisCI is no longer free. Do this using GitHub actions.
+* TravisCI is sorta free for Open Source Software, but you need to provide credit card details.
+

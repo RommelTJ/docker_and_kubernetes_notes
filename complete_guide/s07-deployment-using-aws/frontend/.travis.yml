@@ -1,6 +1,10 @@
+language: generic
 sudo: required
 services:
   - docker
 
 before_install:
   - docker build -f Dockerfile.dev -t rommelrico/frontend .
+
+script:
+  - docker run -e CI=true rommelrico/frontend npm run test

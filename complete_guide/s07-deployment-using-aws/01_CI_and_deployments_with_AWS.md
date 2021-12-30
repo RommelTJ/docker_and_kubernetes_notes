@@ -28,3 +28,7 @@ Creating `.travis.yml` file:
 * Build our image using Dockerfile.dev
 * Tell Travis how to run our test suite
 * Tell Travis how to deploy our code to AWS.
+
+# A Touch More Travis Setup
+
+See `.travis.yml` script section.

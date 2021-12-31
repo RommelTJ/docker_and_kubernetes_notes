@@ -46,3 +46,11 @@ docker-compose -f docker-compose-dev.yml up
 docker-compose -f docker-compose-dev.yml up --build
 docker-compose -f docker-compose-dev.yml down
 ```
+
+## More on Elastic Beanstalk
+
+* AWS Environment gets setup
+  * Automatically sets up a load balancer
+  * Runs Virtual machine with Dockerized application inside a container.
+* URL goes to AWS. Load balancer redirects to virtual machine running Docker.
+* Benefit of Elastic Beanstalk is that it monitors traffic and can automatically add VMs to handle traffic.

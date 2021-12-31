@@ -84,3 +84,9 @@ Created environment variables for TravisCI IAM user, access key, and access key 
 * Created MR.
 * Merged.
 * Changes got deployed.
+
+## Deployment Wrapup
+
+* Checked that new feature got deployed.
+* Note: Docker is not required in any of this workflow.
+* Docker makes things easier.

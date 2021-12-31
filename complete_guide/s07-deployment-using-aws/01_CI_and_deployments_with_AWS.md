@@ -98,3 +98,7 @@ Created environment variables for TravisCI IAM user, access key, and access key 
 3. Click the application you'd like to delete.
 4. Click the "Actions" button and click "Delete Application"
 5. You will be prompted to enter the name of your application to confirm the deletion.
+
+## AWS Configuration Cheat Sheet
+
+See Udemy.

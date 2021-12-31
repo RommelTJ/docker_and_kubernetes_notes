@@ -77,3 +77,10 @@ Created environment variables for TravisCI IAM user, access key, and access key 
 * After pushing to main, TravisCI pushes updates to Elastic Beanstalk.
 * Application is now deployed.
 * Demonstrated the full flow.
+
+## Redeploy on Pull Request Merge
+
+* Pushed a change
+* Created MR.
+* Merged.
+* Changes got deployed.

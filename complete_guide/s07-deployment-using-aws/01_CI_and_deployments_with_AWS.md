@@ -71,3 +71,9 @@ Created environment variables for TravisCI IAM user, access key, and access key 
 * We need to expose the port.
   * With docker run, we manually expose the port (`-p 3000:3000`).
   * To expose the port in AWS EBS, we update the Dockerfile.prod with an `EXPOSE` instruction.
+
+## Workflow with GitHub
+
+* After pushing to main, TravisCI pushes updates to Elastic Beanstalk.
+* Application is now deployed.
+* Demonstrated the full flow.

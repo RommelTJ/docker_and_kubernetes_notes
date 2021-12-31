@@ -36,3 +36,13 @@ See `.travis.yml` script section.
 ## Automatic Build Creation
 
 Commit the changes and see Travis CI.
+
+## AWS Elastic Beanstalk
+
+Set up things on AWS web console and updated yml files.
+
+```
+docker-compose -f docker-compose-dev.yml up
+docker-compose -f docker-compose-dev.yml up --build
+docker-compose -f docker-compose-dev.yml down
+```

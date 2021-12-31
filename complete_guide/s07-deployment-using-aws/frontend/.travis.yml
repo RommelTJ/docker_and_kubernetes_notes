@@ -8,3 +8,13 @@ before_install:
 
 script:
   - docker run -e CI=true rommelrico/frontend npm run test -- --coverage src
+
+deploy:
+  provider: elasticbeanstalk
+  region: "us-west-1"
+  app: "docker-react-example"
+  env: "docker-react-example-env"
+  bucket_name: "elasticbeanstalk-us-west-1-311766412877"
+  bucket_path: "docker-react-example"
+  on:
+    branch: main

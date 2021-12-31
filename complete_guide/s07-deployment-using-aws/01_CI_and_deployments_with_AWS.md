@@ -54,3 +54,7 @@ docker-compose -f docker-compose-dev.yml down
   * Runs Virtual machine with Dockerized application inside a container.
 * URL goes to AWS. Load balancer redirects to virtual machine running Docker.
 * Benefit of Elastic Beanstalk is that it monitors traffic and can automatically add VMs to handle traffic.
+
+## Travis Config for Deployment
+
+See `.travis.yml`.

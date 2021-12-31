@@ -64,3 +64,10 @@ See `.travis.yml`.
 Get AWS Access and Secret Keys from iam.
 
 Created environment variables for TravisCI IAM user, access key, and access key on Travis CI.
+
+## Exposing Ports through the Dockerfile
+
+* After pushing to main, TravisCI pushes updates to Elastic Beanstalk.
+* We need to expose the port.
+  * With docker run, we manually expose the port (`-p 3000:3000`).
+  * To expose the port in AWS EBS, we update the Dockerfile.prod with an `EXPOSE` instruction.

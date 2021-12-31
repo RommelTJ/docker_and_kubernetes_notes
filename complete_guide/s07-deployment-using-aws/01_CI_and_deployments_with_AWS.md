@@ -90,3 +90,11 @@ Created environment variables for TravisCI IAM user, access key, and access key 
 * Checked that new feature got deployed.
 * Note: Docker is not required in any of this workflow.
 * Docker makes things easier.
+
+## Environment Cleanup
+
+1. Go to the Elastic Beanstalk dashboard.
+2. In the left sidebar click "Applications".
+3. Click the application you'd like to delete.
+4. Click the "Actions" button and click "Delete Application"
+5. You will be prompted to enter the name of your application to confirm the deletion.

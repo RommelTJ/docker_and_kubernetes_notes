@@ -58,3 +58,9 @@ docker-compose -f docker-compose-dev.yml down
 ## Travis Config for Deployment
 
 See `.travis.yml`.
+
+## Automated Deployments
+
+Get AWS Access and Secret Keys from iam.
+
+Created environment variables for TravisCI IAM user, access key, and access key on Travis CI.

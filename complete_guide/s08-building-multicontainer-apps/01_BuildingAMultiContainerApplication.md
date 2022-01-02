@@ -42,3 +42,7 @@ Setting up a Worker process to pull an index and calculate the Fibonacci value f
 ## Express API Setup
 
 Setting up Express server.
+
+## Connecting to Postgres
+
+Continuing setting up Express to connect to Postgres.

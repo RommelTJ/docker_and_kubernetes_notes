@@ -58,3 +58,7 @@ More setup in server/index.js for client.
 ## Fetching Data in the React App
 
 Setting up Fib Calculator and Dummy page in client.
+
+## Rendering logic in the app
+
+Setting up the UI in `Fib.js`.

@@ -62,3 +62,7 @@ Setting up Fib Calculator and Dummy page in client.
 ## Rendering logic in the app
 
 Setting up the UI in `Fib.js`.
+
+## Routing in the React App
+
+Set up routing for React pages in `App.js`.

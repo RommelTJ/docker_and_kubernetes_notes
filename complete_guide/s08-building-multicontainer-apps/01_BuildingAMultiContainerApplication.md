@@ -50,3 +50,7 @@ Continuing setting up Express to connect to Postgres.
 ## More Express API Setup
 
 More setup in server/index.js for client.
+
+## Generating the React App
+
+`npx create-react-app client`

@@ -54,3 +54,7 @@ More setup in server/index.js for client.
 ## Generating the React App
 
 `npx create-react-app client`
+
+## Fetching Data in the React App
+
+Setting up Fib Calculator and Dummy page in client.

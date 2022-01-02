@@ -34,3 +34,7 @@ How it will work:
     * the worker pulls the value out, 
     * calculates the value, 
     * and adds the result to redis.
+
+## Worker Process Setup
+
+Setting up a Worker process to pull an index and calculate the Fibonacci value for an index.

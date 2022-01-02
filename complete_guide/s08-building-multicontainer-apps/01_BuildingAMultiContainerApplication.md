@@ -38,3 +38,7 @@ How it will work:
 ## Worker Process Setup
 
 Setting up a Worker process to pull an index and calculate the Fibonacci value for an index.
+
+## Express API Setup
+
+Setting up Express server.

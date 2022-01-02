@@ -11,3 +11,26 @@
 * Fibonacci Sequence. Calculate the value at a particular index.
 * User Interface to enter index to calculate Fibonacci number.
 * Application will have some kind of persistence and calculate the correct value.
+
+## Application Architecture
+
+* Nginx will be our web server
+  * React application
+  * Express server for API
+    * Redis
+      * Worker
+    * Postgres
+
+Redis is an in-memory datastore.    
+Postgres is a database.  
+All of the values/indices is stored in Postgres.    
+Calculated values have to come from Redis.  
+
+How it will work:  
+* User submits number
+* Number gets stored into Postgres DB
+* Number gets stored into Redis DB
+  * When a new index gets added to Redis, 
+    * the worker pulls the value out, 
+    * calculates the value, 
+    * and adds the result to redis.

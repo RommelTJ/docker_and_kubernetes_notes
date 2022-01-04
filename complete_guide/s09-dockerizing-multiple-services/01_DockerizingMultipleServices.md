@@ -8,3 +8,8 @@ See complex app.
 
 * Setting up dev containers for each app.
 * See client Dockerfile.dev.
+
+```
+docker build -f Dockerfile.dev -t rommelrico/complex-client .
+docker run -it rommelrico/complex-client
+```

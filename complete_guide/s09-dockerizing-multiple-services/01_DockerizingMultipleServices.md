@@ -11,5 +11,5 @@ See complex app.
 
 ```
 docker build -f Dockerfile.dev -t rommelrico/complex-client .
-docker run -it rommelrico/complex-client
+docker run -it -p 3000:3000 rommelrico/complex-client
 ```

@@ -25,3 +25,12 @@ docker run rommelrico/complex-server
 docker build -f Dockerfile.dev -t rommelrico/complex-worker .
 docker run rommelrico/complex-worker
 ```
+
+## Adding Postgres as a Service
+
+* Want to set up a Docker Compose file for development.
+  * postgres: what image to use?
+  * redis: what image to use?
+  * server: specify build, volumes, and environment variables.
+
+See `docker-compose.yml`.

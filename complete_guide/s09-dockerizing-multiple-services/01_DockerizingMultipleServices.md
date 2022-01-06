@@ -34,3 +34,8 @@ docker run rommelrico/complex-worker
   * server: specify build, volumes, and environment variables.
 
 See `docker-compose.yml`.
+
+## Docker-compose config
+
+* Setting up Redis in `docker-compose.yml`.
+* Starting to set up build, volumes, and env variables in server in `docker-compose.yml`.

@@ -2,3 +2,12 @@ version: '3'
 services:
   postgres:
     image: 'postgres:latest'
+  redis:
+    image: 'redis:latest'
+  server:
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./server
+    volumes:
+      - /app/node_modules # Exception for node_modules
+      - ./server:/app # Any time our app tries to access something within "app", it gets redirected to "server"

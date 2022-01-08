@@ -52,3 +52,7 @@ Updated `docker-compose.yml` to set up environment variables.
 ```
 docker compose up --build
 ```
+
+## The Worker and Client Services
+
+Added worker and client services to `docker-compose.yml`.

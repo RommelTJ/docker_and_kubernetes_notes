@@ -39,3 +39,5 @@ See `docker-compose.yml`.
 
 * Setting up Redis in `docker-compose.yml`.
 * Starting to set up build, volumes, and env variables in server in `docker-compose.yml`.
+
+## Environment Variables with Docker Compose

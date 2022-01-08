@@ -13,3 +13,11 @@ services:
     volumes:
       - /app/node_modules # Exception for node_modules
       - ./server:/app # Any time our app tries to access something within "app", it gets redirected to "server"
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - PGUSER=postgres
+      - PGHOST=postgres
+      - PGDATABASE=postgres
+      - PGPASSWORD=postgres_password
+      - PGPORT=5432

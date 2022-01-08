@@ -41,3 +41,14 @@ See `docker-compose.yml`.
 * Starting to set up build, volumes, and env variables in server in `docker-compose.yml`.
 
 ## Environment Variables with Docker Compose
+
+Updated `docker-compose.yml` to set up environment variables.
+* Two syntaxes: 
+  * variableName=value
+    * Sets up a variable in the container at run time.
+  * variableName
+    * Sets up a variable in the container at run time but value is taken from your computer.
+
+```
+docker compose up --build
+```

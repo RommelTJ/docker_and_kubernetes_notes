@@ -79,3 +79,7 @@ Added worker and client services to `docker-compose.yml`.
 
 * Created `Dockerfile.dev` in nginx directory.
 * Updated `docker-compose.yml` to include nginx as a service.
+
+## Starting up Docker Compose
+
+`docker-compose up --build`

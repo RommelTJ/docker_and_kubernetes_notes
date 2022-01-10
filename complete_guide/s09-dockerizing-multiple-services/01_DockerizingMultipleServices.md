@@ -83,3 +83,8 @@ Added worker and client services to `docker-compose.yml`.
 ## Starting up Docker Compose
 
 `docker-compose up --build`
+
+## Opening Websocket Connections
+
+* Updated nginx `default.conf` to allow websocket connections.
+* Rebuilt image: `docker-compose up --build`

@@ -56,3 +56,12 @@ docker compose up --build
 ## The Worker and Client Services
 
 Added worker and client services to `docker-compose.yml`.
+
+## Nginx Path Routing
+
+* Our browser will ask for certain routes, but they need to be served from different apps.
+  * /index.html -> React Server
+  * /main.js -> React Server
+  * /api/values/all -> Express Server
+  * /api/values/current -> Express Server
+* We will add a container with an Nginx server and configure routes for it.

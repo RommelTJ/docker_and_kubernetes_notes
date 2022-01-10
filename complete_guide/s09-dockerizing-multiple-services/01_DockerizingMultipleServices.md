@@ -65,3 +65,12 @@ Added worker and client services to `docker-compose.yml`.
   * /api/values/all -> Express Server
   * /api/values/current -> Express Server
 * We will add a container with an Nginx server and configure routes for it.
+
+## Routing with Nginx
+
+* Created `default.conf` and added to Nginx config.
+  * Tell Nginx there is an 'upstream' server at port 3000.
+  * Tell Nginx there is an 'upstream' server at port 5000.
+  * Listen on port 80.
+  * If anyone comes to '/', send them to the client upstream.
+  * If anyone comes to '/api', send them to the server upstream.

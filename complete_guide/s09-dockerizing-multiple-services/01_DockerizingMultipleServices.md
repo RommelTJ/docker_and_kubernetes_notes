@@ -74,3 +74,8 @@ Added worker and client services to `docker-compose.yml`.
   * Listen on port 80.
   * If anyone comes to '/', send them to the client upstream.
   * If anyone comes to '/api', send them to the server upstream.
+
+## Building a Custom Nginx Image
+
+* Created `Dockerfile.dev` in nginx directory.
+* Updated `docker-compose.yml` to include nginx as a service.

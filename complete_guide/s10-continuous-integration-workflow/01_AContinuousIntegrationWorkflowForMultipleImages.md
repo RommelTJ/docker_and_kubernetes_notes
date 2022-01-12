@@ -26,3 +26,8 @@ Set up production versions for all of our Dockerfiles.dev files.
 
 Setting up multiple Nginx instances for production.  
 Remember that Nginx is being used for routing.  
+
+## Altering Nginx's Listen Port
+
+* Added a client-specific nginx/default.conf
+* Set up Dockerfile correctly

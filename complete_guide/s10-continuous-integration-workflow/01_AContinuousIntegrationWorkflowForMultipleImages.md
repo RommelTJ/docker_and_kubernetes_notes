@@ -17,3 +17,7 @@ Multi-Container Setup:
 * Travis pushes built **prod** images to Docker Hub
 * Travis pushes project to AWS EB
 * EB pulls images from Docker Hub, deploys
+
+## Production Dockerfiles
+
+Set up production versions for all of our Dockerfiles.dev files.

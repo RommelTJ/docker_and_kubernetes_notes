@@ -21,3 +21,8 @@ Multi-Container Setup:
 ## Production Dockerfiles
 
 Set up production versions for all of our Dockerfiles.dev files.
+
+## Multiple Nginx Instances
+
+Setting up multiple Nginx instances for production.  
+Remember that Nginx is being used for routing.  

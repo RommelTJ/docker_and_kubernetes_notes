@@ -35,3 +35,8 @@ Remember that Nginx is being used for routing.
 ## Cleaning up Tests
 
 In a real scenario, we would add a mocking module. Out of scope, so we comment out the test.
+
+## GitHub and TravisCI Setup
+
+* Set up https://github.com/RommelTJ/multi-docker-example
+* Set up https://app.travis-ci.com/github/RommelTJ/docker-react-example

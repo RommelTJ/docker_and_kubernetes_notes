@@ -58,3 +58,7 @@ Added `.travis.yml` file to:
 * Updated `.travis.yml` to log in to docker.
   * `echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin`
 * Push images to DockerHub.
+
+## Successful Image Building
+
+* Verified this all worked on TravisCI and images got uploaded to DockerHub.

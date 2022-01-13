@@ -14,3 +14,8 @@ after_success:
   - docker build -t rommelrico/complex-nginx ./nginx
   - docker build -t rommelrico/complex-server ./server
   - docker build -t rommelrico/complex-worker ./worker
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  - docker push rommelrico/complex-client
+  - docker push rommelrico/complex-nginx
+  - docker push rommelrico/complex-server
+  - docker push rommelrico/complex-worker

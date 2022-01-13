@@ -50,3 +50,11 @@ Added `.travis.yml` file to:
 * Build prod versions of all projects
 * Push all to DockerHub
 * Tell Elastic Beanstalk to update
+
+## Pushing Images to DockerHub
+
+* `docker login`
+* Added docker login environment variables to TravisCI website.
+* Updated `.travis.yml` to log in to docker.
+  * `echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin`
+* Push images to DockerHub.

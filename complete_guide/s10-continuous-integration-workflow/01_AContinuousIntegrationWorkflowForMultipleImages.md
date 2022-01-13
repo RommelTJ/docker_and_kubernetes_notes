@@ -31,3 +31,7 @@ Remember that Nginx is being used for routing.
 
 * Added a client-specific nginx/default.conf
 * Set up Dockerfile correctly
+
+## Cleaning up Tests
+
+In a real scenario, we would add a mocking module. Out of scope, so we comment out the test.

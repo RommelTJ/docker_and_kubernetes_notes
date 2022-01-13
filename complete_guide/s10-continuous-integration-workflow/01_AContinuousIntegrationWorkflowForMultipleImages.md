@@ -40,3 +40,13 @@ In a real scenario, we would add a mocking module. Out of scope, so we comment o
 
 * Set up https://github.com/RommelTJ/multi-docker-example
 * Set up https://app.travis-ci.com/github/RommelTJ/docker-react-example
+
+## Travis Configuration Setup
+
+Added `.travis.yml` file to:
+* Specify docker as a dependency
+* Build test version of React project
+* Run Tests
+* Build prod versions of all projects
+* Push all to DockerHub
+* Tell Elastic Beanstalk to update

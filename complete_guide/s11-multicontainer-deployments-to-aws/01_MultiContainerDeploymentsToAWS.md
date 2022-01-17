@@ -89,3 +89,17 @@ Setting up EC instance on AWS: `complex-docker-redis`.
 * Create a new SC: `complex-docker`.
 * Set up Inbound rule.
   * Custom TCP, Port Range 5432-6379, source using `complex-docker` sg.
+
+## Applying Security Groups to Resources
+
+* Applying SG to all the instances.
+* For ElastiCache
+  * Select instance > Modify > Update Security Group > Save.
+* For RDS
+  * Select instance
+  * Modify > Update Security Group > Save.
+* For EB
+  * Select instance
+  * Configuration
+  * Edit Instances
+  * Edit EC2 Security Groups > select `complex-docker`. Apply.

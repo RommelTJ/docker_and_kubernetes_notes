@@ -53,3 +53,21 @@ Advantages to using AWS Relational Database Service
 * Probably better security than what we can do ourselves.
 * Automated backups and rollbacks.
 * Easier to migrate off of EB with.
+
+## Overview of AWS VPCs and Security Groups
+
+* By default, when we create an EB instance, the services won't be able to communicate to RDS or EC.
+* We have to form a very distinct link between the services.
+* This is done via VPCs and Security Groups.
+* The AWS EB instance was created in a specific region and Virtual Private Cloud (VPC).
+* AWS Console > Services > VPC
+* To allow services to communicate with each other, you must set up a Security Group (Firewall rules).
+  * Ex: Allow any incoming traffic on Port 80 from any IP.
+  * Ex: Allow traffic on Port 3010 from IP 172.0.40.2.
+* To look up your security group:
+  * VPCs > Security Group > complex-docker-env
+  * By default, allows traffic from anywhere to Port 80.
+  * By default, outbound traffic is set to allow all.
+* We want to create a new security group that says:
+  * Allow any traffic from any other AWS service that has this security group
+  * And then we want to attach it to our EB Instance, our RDS service, and our EC service.

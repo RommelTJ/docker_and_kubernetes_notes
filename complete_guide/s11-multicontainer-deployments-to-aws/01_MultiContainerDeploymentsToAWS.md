@@ -30,3 +30,26 @@
 Setting up the EB Environment on AWS.
 * App name: `complex-docker`
 * Environment: `complex-docker-env`
+
+## Managed Data Service Providers
+
+* In `Dockerrun.aws.json`, we did not specify a container for Postgres or Redis.
+* This leads to discussion on databases inside containers.
+* Architecture for production:
+  * Redis will run separately in AWS Elastic Cache (EC).
+  * Postgres will run separately in AWS Relational Database Service (RDS).
+
+Advantages to using AWS Elastic Cache
+* Automatically creates and maintains Redis instances for you.
+* Super easy to scale.
+* Built-in logging + maintenance.
+* Probably better security than what we can do ourselves.
+* Easier to migrate off of EB with.
+
+Advantages to using AWS Relational Database Service
+* Automatically creates and maintains Postgres instances for you.
+* Super easy to scale.
+* Built-in logging + maintenance.
+* Probably better security than what we can do ourselves.
+* Automated backups and rollbacks.
+* Easier to migrate off of EB with.

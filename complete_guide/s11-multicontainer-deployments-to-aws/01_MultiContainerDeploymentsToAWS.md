@@ -17,3 +17,7 @@
       * https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definition_parameters.html
     * Container Definitions: 
       * https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definition_parameters.html#container_definitions
+
+## Adding Container Definitions to DockerRun
+
+Added `Dockerrun.aws.json` file.

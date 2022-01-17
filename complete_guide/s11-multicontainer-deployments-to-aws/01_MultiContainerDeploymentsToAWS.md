@@ -81,3 +81,11 @@ Database name: `fibvalues`.
 
 Setting up EC instance on AWS: `complex-docker-redis`.
 * Setting up a cluster, not a single node.
+
+## Creating a Custom Security Group
+
+* Wait for Redis and Postgres instances to be created.
+* Go to VPC > Security Groups
+* Create a new SC: `complex-docker`.
+* Set up Inbound rule.
+  * Custom TCP, Port Range 5432-6379, source using `complex-docker` sg.

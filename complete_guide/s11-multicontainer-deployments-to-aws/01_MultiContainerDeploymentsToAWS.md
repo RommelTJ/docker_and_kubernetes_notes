@@ -21,3 +21,5 @@
 ## Adding Container Definitions to DockerRun
 
 Added `Dockerrun.aws.json` file.
+
+On amazon, at least one container definition must be essential.

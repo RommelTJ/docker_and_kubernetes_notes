@@ -4,7 +4,20 @@
     {
       "name": "client",
       "image": "rommelrico/complex-client",
-      "hostname": "client"
+      "hostname": "client",
+      "essential": false
+    },
+    {
+      "name": "server",
+      "image": "rommelrico/complex-server",
+      "hostname": "api",
+      "essential": false
+    },
+    {
+      "name": "worker",
+      "image": "rommelrico/complex-worker",
+      "hostname": "worker",
+      "essential": false
     }
   ]
 }

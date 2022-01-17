@@ -1,0 +1,43 @@
+version: '3'
+services:
+  client:
+    image: 'rommelrico/complex-client'
+    hostname: "client"
+    deploy:
+      resources:
+        limits:
+          memory: 128m
+  api:
+    image: "rommelrico/complex-server"
+    hostname: "api"
+    deploy:
+      resources:
+        limits:
+          memory: 128m
+    environment:
+      - REDIS_HOST=$REDIS_HOST
+      - REDIS_PORT=$REDIS_PORT
+      - PGUSER=$PGUSER
+      - PGHOST=$PGHOST
+      - PGDATABASE=$PGDATABASE
+      - PGPASSWORD=$PGPASSWORD
+      - PGPORT=$PGPORT
+  worker:
+    image: "rommelrico/complex-worker"
+    hostname: "worker"
+    deploy:
+      resources:
+        limits:
+          memory: 128m
+    environment:
+      - REDIS_HOST=$REDIS_HOST
+      - REDIS_PORT=$REDIS_PORT
+  nginx:
+    image: "rommelrico/complex-nginx"
+    hostname: "nginx"
+    deploy:
+      resources:
+        limits:
+          memory: 128m
+    ports:
+      - '80:80'

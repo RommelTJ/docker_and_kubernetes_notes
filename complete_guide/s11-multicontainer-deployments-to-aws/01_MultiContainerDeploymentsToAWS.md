@@ -138,3 +138,7 @@ deploy:
     limits:
       memory: 128m
 ```
+
+## Verifying deployment
+
+Find your EB URL, visit it.

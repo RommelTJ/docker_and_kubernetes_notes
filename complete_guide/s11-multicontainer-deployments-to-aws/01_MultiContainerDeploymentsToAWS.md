@@ -76,3 +76,8 @@ Advantages to using AWS Relational Database Service
 
 Setting up RDS instance on AWS: `complex-docker-postgres`.
 Database name: `fibvalues`.
+
+## EC Redis Creation
+
+Setting up EC instance on AWS: `complex-docker-redis`.
+* Setting up a cluster, not a single node.

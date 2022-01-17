@@ -149,3 +149,13 @@ To demo an update and redeploy:
 * Client > Updated `App.js` with a title.
 * Commit, push.
 * Changes are reflected on AWS.
+
+## Cleaning up AWS Resources
+
+Shutting down all AWS resources so we don't get billed.
+* Shutting down EC Redis
+* Shutting down RDS Postgres
+* Shutting down EB Instance
+* Deleted Security Group
+* Deleted S3 bucket.
+* Deleted IAM user.

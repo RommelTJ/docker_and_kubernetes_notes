@@ -127,3 +127,14 @@ Next, go to TravisCI:
 ## Travis Deploy Script
 
 Updated `.travis.yml`.
+
+## Container Memory Allocations
+
+Fixed memoryReservation issue on AWS EB.
+
+```
+deploy:
+  resources:
+    limits:
+      memory: 128m
+```

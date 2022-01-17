@@ -71,3 +71,8 @@ Advantages to using AWS Relational Database Service
 * We want to create a new security group that says:
   * Allow any traffic from any other AWS service that has this security group
   * And then we want to attach it to our EB Instance, our RDS service, and our EC service.
+
+## RDS Database Creation
+
+Setting up RDS instance on AWS: `complex-docker-postgres`.
+Database name: `fibvalues`.

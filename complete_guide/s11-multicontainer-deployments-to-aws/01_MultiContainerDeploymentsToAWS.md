@@ -24,3 +24,9 @@
 * Added container definitions for each service.
 * On amazon, at least one container definition must be essential.
 * For the nginx container, we also have to specify links to network ECS containers.
+
+## Creating the EB environment
+
+Setting up the EB Environment on AWS.
+* App name: `complex-docker`
+* Environment: `complex-docker-env`

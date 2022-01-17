@@ -20,6 +20,7 @@
 
 ## Adding Container Definitions to DockerRun
 
-Added `Dockerrun.aws.json` file.
-
-On amazon, at least one container definition must be essential.
+* Added `Dockerrun.aws.json` file.
+* Added container definitions for each service.
+* On amazon, at least one container definition must be essential.
+* For the nginx container, we also have to specify links to network ECS containers.

@@ -103,3 +103,10 @@ Setting up EC instance on AWS: `complex-docker-redis`.
   * Configuration
   * Edit Instances
   * Edit EC2 Security Groups > select `complex-docker`. Apply.
+
+## Setting Environment Variables
+
+* We have to provide the environment variables on EB.
+* Configuration > Software > Edit
+* Scroll to Environment properties.
+* Add environment variables and Apply.

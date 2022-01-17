@@ -123,3 +123,7 @@ Next, go to TravisCI:
 * Select repo
 * Settings > Environment Variables
 * Add `AWS_ACCESS_KEY` and `AWS_SECRET_KEY`.
+
+## Travis Deploy Script
+
+Updated `.travis.yml`.

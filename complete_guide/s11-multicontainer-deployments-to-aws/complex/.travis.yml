@@ -19,3 +19,15 @@ after_success:
   - docker push rommelrico/complex-nginx
   - docker push rommelrico/complex-server
   - docker push rommelrico/complex-worker
+
+deploy:
+  provider: elasticbeanstalk
+  region: 'us-west-1'
+  app: 'complex-docker'
+  env: 'complex-docker-env'
+  bucket_name: "elasticbeanstalk-us-west-1-311766412877"
+  bucket_path: 'complex-docker-bucket'
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY

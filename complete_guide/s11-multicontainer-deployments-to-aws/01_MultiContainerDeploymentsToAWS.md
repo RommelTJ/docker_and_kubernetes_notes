@@ -110,3 +110,16 @@ Setting up EC instance on AWS: `complex-docker-redis`.
 * Configuration > Software > Edit
 * Scroll to Environment properties.
 * Add environment variables and Apply.
+
+## IAM Keys for Deployment
+
+* We have to create an IAM user so that Travis can push changes to EB.
+* Go to AWS Console > Identity and Access Management (IAM).
+* Add new user: `complex-docker-deployer`
+* Set up programmatic access
+* Attach existing policies directly > EB full access.
+
+Next, go to TravisCI:
+* Select repo
+* Settings > Environment Variables
+* Add `AWS_ACCESS_KEY` and `AWS_SECRET_KEY`.

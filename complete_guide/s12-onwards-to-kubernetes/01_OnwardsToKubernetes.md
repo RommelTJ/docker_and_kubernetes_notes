@@ -19,3 +19,28 @@
   * A system for running containers over multiple different machines.
 * Why use Kubernetes?
   * When you need to run different containers with different images.
+
+## Kubernetes in Development and Production
+
+* Development
+  * Minikube
+* Production
+  * Amazon Elastic Container Service for Kubernetes (EKS)
+  * Google Cloud Kubernetes Engine (GKE)
+  * Do it yourself
+
+When developing locally,
+* kubectl
+  * Used for managing containers in the node / cluster
+* minikube
+  * Used for managing the VM itself
+* Virtual Machine (node)
+  * Runs the containers
+
+Local Kubernetes Development
+* Install kubectl
+  * CLI for interacting with our master node
+* Install a VM driver virtualbox
+  * Used to make a VM that will be your single node
+* Install minikube
+  * Runs a single node on that VM

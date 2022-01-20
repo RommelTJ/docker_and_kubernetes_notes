@@ -44,3 +44,21 @@ Local Kubernetes Development
   * Used to make a VM that will be your single node
 * Install minikube
   * Runs a single node on that VM
+
+## Mapping Existing Knowledge
+
+Short-term goal:
+* Get the complex-client image running on our local Kubernetes Cluster as a container.
+
+In `docker-compose.yaml`:
+* each service can be built into an image.
+  * Kubernetes expects all images to be already built.
+* each service can represent a container.
+  * Kubernetes has one config per object we want to create.
+* each service defines networking requirements.
+  * Kubernetes asks you to manually set up all networking.
+
+Thus, to get the complex-client running in our local cluster, we need to:
+* Make sure our image is hosted on DockerHub
+* Make one config file to create the container
+* Make one config file to set up networking

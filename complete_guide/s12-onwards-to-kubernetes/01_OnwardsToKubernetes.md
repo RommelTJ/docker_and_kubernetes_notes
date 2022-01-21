@@ -62,3 +62,14 @@ Thus, to get the complex-client running in our local cluster, we need to:
 * Make sure our image is hosted on DockerHub
 * Make one config file to create the container
 * Make one config file to set up networking
+
+## Adding Configuration Files
+
+Using `image: stephengrider/multi-client` to avoid errors.
+
+```
+mkdir simplek8s
+```
+
+Created `client-pod.yaml` with config for creating container
+Created `client-node-port.yaml` with config for networking.

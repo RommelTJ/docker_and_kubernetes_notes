@@ -82,3 +82,12 @@ Created `client-node-port.yaml` with config for networking.
   * Examples: StatefulSet, ReplicaController, Pod, Service
 * API Versions ("apiVersion")
   * Each API version defines a different set of 'objects' we can use
+
+## Running containers in Pods
+
+* Pods
+  * A grouping of containers with a very specific purpose.
+  * Kubernetes doesn't have the concept of "creating a container" and running it by itself.
+  * The smallest unit of deployment in Kubernetes is a Pod.
+  * Example of Pod with multiple containers:
+    * Postgres container + logger container + backup manager container.

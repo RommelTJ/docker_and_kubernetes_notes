@@ -73,3 +73,12 @@ mkdir simplek8s
 
 Created `client-pod.yaml` with config for creating container
 Created `client-node-port.yaml` with config for networking.
+
+## Object Types and API Versions
+
+* Object Types ("kind")
+  * A config file is used to create an "object".
+  * Objects serve different purposes. Pod is used to run a container. Service is used for networking.
+  * Examples: StatefulSet, ReplicaController, Pod, Service
+* API Versions ("apiVersion")
+  * Each API version defines a different set of 'objects' we can use

@@ -91,3 +91,39 @@ Created `client-node-port.yaml` with config for networking.
   * The smallest unit of deployment in Kubernetes is a Pod.
   * Example of Pod with multiple containers:
     * Postgres container + logger container + backup manager container.
+
+## Service Config Files in Depth
+
+* metadata is used for printing information.
+* Focusing on Service object and its config.
+* Services set up networking in a Kubernetes Cluster.
+  * Subtypes
+    * ClusterIP
+      * To be discussed later.
+    * NodePort
+      * Exposes a container to the outside world.
+      * Only good for dev purposes.
+    * LoadBalancer
+      * To be discussed later.
+    * Ingress
+      * To be discussed later.
+* Kubernetes VM runs as follows
+  * kube-proxy communicates with the outside world.
+  * Service NodePort gets request from kube-proxy.
+    * Service has a selector with `component: web`
+    * Service specifies port to communicate with.
+  * Pod receives request from NodePort configured port.
+    * Pod has a label with `component: web` thus it's found.
+    * Pod is exposing port 3000 thus accepts the request.
+  * Pod runs the application inside its container.
+* Service ports
+  * port
+    * Used if another Pod needed to access the multi-client Pod.
+    * Worthless in our case
+  * targetPort
+    * The port inside the Pod that we want to open up traffic to.
+  * nodePort
+    * What you and I type into the browser to communicate, e.g. `localhost:31515`.
+    * Needs to be a number between 30000-32767
+    * If we don't specify one, it's automatically assigned.
+    * We don't use this in production because we don't want to expose the ports like this.

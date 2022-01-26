@@ -127,3 +127,20 @@ Created `client-node-port.yaml` with config for networking.
     * Needs to be a number between 30000-32767
     * If we don't specify one, it's automatically assigned.
     * We don't use this in production because we don't want to expose the ports like this.
+
+## Connecting to Running Containers
+
+* Feed a config file to kubectl
+* `kubectl apply -f <filename>`
+* kubectl: CLI we use to change our k8s cluster
+* apply: change the current configuration of our cluster
+
+```
+kubectl apply -f client-pod.yaml
+kubectl apply -f client-node-port.yaml
+```
+
+* To get a status of pods: `kubectl get pods`
+* To get status of services: `kubectl get services`
+* `3050:31515/TCP` means `3050` is the port, `31515` is the nodePort.
+* To access the app: `http://localhost:31515/`

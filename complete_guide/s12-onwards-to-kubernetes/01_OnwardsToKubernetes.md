@@ -144,3 +144,36 @@ kubectl apply -f client-node-port.yaml
 * To get status of services: `kubectl get services`
 * `3050:31515/TCP` means `3050` is the port, `31515` is the nodePort.
 * To access the app: `http://localhost:31515/`
+
+## The Entire Deployment Flow
+
+* What happens when you feed the config to kubectl?
+* A Node is a computer or a VM that will run software
+* The Master is a computer or VM that will control the Nodes.
+* Deployment file says, "I want to create 4 copies of multi-worker"
+* Deployment file is applied via kubectl.
+* Master Node receives the config.
+* kube-apiserver sees new file, reads it, interprets it.
+* Master Node keeps record of responsibilities.
+  * "I need to run multi-worker image."
+  * "I need 4 copies."
+  * "I am currently running 0."
+* Master Node tells Node 0, run two copies; Node 1 run 1 copy; Node 2 run 1 copy.
+* Worker Nodes have docker installed. 
+  * They then reach out to DockerHub, 
+  * Download images, 
+  * Build the image, 
+  * Run the image.
+* Master Node gets status update from Worker Nodes.
+  * "I need to run multi-worker image." Done.
+  * "I need 4 copies." Done.
+  * "I am currently running 4." Done.
+* The Master is consistently polling each Node.
+* If a Pod dies, the responsibilities list gets updated.
+  * * "I need to run multi-worker image." Done.
+  * "I need 4 copies." Done.
+  * "I am currently running 3." Oops.
+* Master selects a Worker Node to run an additional copy.
+* Worker Node spins up a new copy.
+* Master polls again and all done again.
+* We work directly with the master node. We don't interact with the worker nodes.

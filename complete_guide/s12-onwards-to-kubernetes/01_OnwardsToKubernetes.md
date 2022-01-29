@@ -177,3 +177,26 @@ kubectl apply -f client-node-port.yaml
 * Worker Node spins up a new copy.
 * Master polls again and all done again.
 * We work directly with the master node. We don't interact with the worker nodes.
+
+## Imperative vs Declarative Deployments
+
+Important Takeaways:  
+* Kubernetes is a system to deploy containerized apps.
+* Nodes are individual machines that run containers
+* Masters are machines with a set of programs to manage nodes.
+* Kubernetes didn't build our images.
+* Kubernetes decided where to run each container. Each node can run a dissimilar set of containers.
+* To deploy something, we update the desired state of the master with a config file.
+* The master works constantly to meet your desired state.
+
+Styles of deployments:  
+* Imperative Deployments
+  * "Do exactly these steps to arrive at this container setup."
+  * It's hard. You have to come up with way to figure out current state, and plan to get to desired state.
+* Declarative Deployments
+  * "Our container setup should look like this. Make it happen."
+  * Usually easier. You only need to come up with a desired state in the config file.
+
+Recommendation:  
+* When googling, you will sometimes see resources to do things imperatively. 
+* You probably don't want to do those since the declarative approach is easier. 

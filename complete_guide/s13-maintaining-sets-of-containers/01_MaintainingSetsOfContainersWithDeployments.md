@@ -36,3 +36,21 @@ kubectl apply -f client-pod.yaml
 kubectl get pods
 kubectl describe pod client-pod
 ```
+
+## Limitations in Config Updates
+
+* Updated `containerPort` in `client-pod.yml`.
+* Run `kubectl apply -f client-pod.yaml`
+* BOOM. ERRORS.
+* You can only update certain configurations. 
+* There is a workaround for this. Keep going through the lectures.
+
+```
+The Pod "client-pod" is invalid: spec: 
+Forbidden: pod updates may not change fields other than 
+`spec.containers[*].image`, 
+`spec.initContainers[*].image`, 
+`spec.activeDeadlineSeconds`, 
+`spec.tolerations` (only additions to existing tolerations) or 
+`spec.terminationGracePeriodSeconds` (allow it to be set to 1 if it was previously negative)
+```

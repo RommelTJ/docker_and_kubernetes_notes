@@ -25,3 +25,14 @@
   * When a new config file gets applied that matches the same and kind, the master treats it as an update.
   * The existing pods get redeployed with the updates.
   * If we made a change to the name, then the master would just spin up new pods and leave existing ones alone.
+
+## Declarative Updates in Action
+
+* See updates to `client-pod.yaml`
+  * Changed: `stephengrider/multi-client` to `stephengrider/multi-worker`
+
+```
+kubectl apply -f client-pod.yaml
+kubectl get pods
+kubectl describe pod client-pod
+```

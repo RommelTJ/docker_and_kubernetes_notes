@@ -54,3 +54,29 @@ Forbidden: pod updates may not change fields other than
 `spec.tolerations` (only additions to existing tolerations) or 
 `spec.terminationGracePeriodSeconds` (allow it to be set to 1 if it was previously negative)
 ```
+
+## Running Containers with Deployments
+
+* Object types
+  * Pods
+    * Runs one or more closely related containers
+  * Services
+    * Sets up networking in a Kubernetes cluster
+  * Deployment
+    * Maintains a set of identical pods, ensuring that they have the correct config and that the right number exists.
+* Differences between Pods and Deployments
+  * Pods
+    * Runs a single set of containers
+    * Good for one-off dev purposes
+    * Rarely used directly in Production
+  * Deployment
+    * Runs a set of identical pods (one or more)
+    * Monitors the state of each pod, updating as necessary
+    * Good for dev
+    * Good for production
+* When you create a deployment
+  * It will have a Pod template
+    * How many containers?
+    * What name?
+    * What port?
+    * What image?

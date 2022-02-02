@@ -80,3 +80,8 @@ Forbidden: pod updates may not change fields other than
     * What name?
     * What port?
     * What image?
+
+## Deployment Configuration Files
+
+* We won't create Pods manually. We'll create Deployments.
+* See `client-deployment.yaml`.

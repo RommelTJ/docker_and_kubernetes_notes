@@ -94,3 +94,21 @@ Forbidden: pod updates may not change fields other than
 * `replicas` specifies the number of pods that the deployment needs to create/maintain.
 * `selector` adds labels so that pods can be managed after they get created.
   * Ex: "I'll look for objects with label of component web".
+
+## Applying a Deployment
+
+* Remove an object
+  * `kubectl delete -f client-pod.yaml`
+  * This is an imperative update.
+
+* Apply a deployment
+  * `kubectl apply -f client-deployment.yaml`
+  * This is a declarative update.
+
+```
+kubectl get pods
+kubectl delete -f client-pod.yaml
+kubectl apply -f client-deployment.yaml
+kubectl get pods
+kubectl get deployment
+```

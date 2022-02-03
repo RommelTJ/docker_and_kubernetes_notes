@@ -85,3 +85,12 @@ Forbidden: pod updates may not change fields other than
 
 * We won't create Pods manually. We'll create Deployments.
 * See `client-deployment.yaml`.
+
+## Walking Through The Deployment Config
+
+* `apiVersion` and `kind` specify the object we create.
+* `metadata` section adds the name of our deployment.
+* `template` specifies the configuration for every single pod that needs to be created/maintained by the deployment.
+* `replicas` specifies the number of pods that the deployment needs to create/maintain.
+* `selector` adds labels so that pods can be managed after they get created.
+  * Ex: "I'll look for objects with label of component web".

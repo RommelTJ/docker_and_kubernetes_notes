@@ -112,3 +112,9 @@ kubectl apply -f client-deployment.yaml
 kubectl get pods
 kubectl get deployment
 ```
+
+## Why use Services?
+
+* The service watches for every pod that matches its selector
+* If a pod restarts, it changes IP address.
+* The service lets you always have the correct IP address for the Pod.

@@ -118,3 +118,14 @@ kubectl get deployment
 * The service watches for every pod that matches its selector
 * If a pod restarts, it changes IP address.
 * The service lets you always have the correct IP address for the Pod.
+
+## Scaling and Changing Deployments
+
+* Updating containerPort from port 3000 to 9999 in `client-deployment.yaml`.
+* `kubectl apply -f client-deployment.yaml`
+* `kubectl get deployments`
+* `kubectl get pods`
+* `kubectl describe pods`
+  * Container is now running on Port 9999
+  * (This is misleading since containerPort is purely informational. The docker container exposes port 3000.)
+  * (Attached the Service to the deployment yaml and added commit message to hopefully make clearer.)

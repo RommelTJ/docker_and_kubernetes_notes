@@ -161,3 +161,15 @@ kubectl get deployment
     * We are not allowed to use environment variables in config files.
   * Use an imperative command to update the image version that the deployment should use.
     * Uses an imperative command.
+
+## Imperatively Updating a Deployment's Image
+
+* Tag the image with a version number, and push it to Docker Hub.
+* Run a `kubectl` command forcing the deployment to use the new image version.
+  * `kubectl set image <object_type>/<object_name> <container_name>=<new_image_to_use>`
+
+```
+docker build -t stephengrider/multi-client:v5 .
+docker push stephengrider/multi-client:v5
+kubectl set image deployment/client-deployment client=stephengrider/multi-client:v5
+```

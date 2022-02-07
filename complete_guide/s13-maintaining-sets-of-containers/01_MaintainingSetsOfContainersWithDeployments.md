@@ -138,3 +138,9 @@ kubectl get deployment
     * Saved file and `kubectl apply -f client-deployment.yaml`
   * Update the multi-client image, push to Docker Hub
   * Get the deployment to recreate our pods with the latest version of multi-client
+
+## Rebuilding the Client Image
+
+* Rebuild the client image.
+* Push to Docker Hub.
+* Update `client-deployment.yaml`

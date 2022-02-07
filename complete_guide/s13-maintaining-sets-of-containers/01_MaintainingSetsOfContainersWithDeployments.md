@@ -129,3 +129,12 @@ kubectl get deployment
   * Container is now running on Port 9999
   * (This is misleading since containerPort is purely informational. The docker container exposes port 3000.)
   * (Attached the Service to the deployment yaml and added commit message to hopefully make clearer.)
+
+## Updating Deployment Images
+
+* How do we update a deployment when there's a new version of an image?
+* Update Image Version
+  * Change deployment to use multi-client again
+    * Saved file and `kubectl apply -f client-deployment.yaml`
+  * Update the multi-client image, push to Docker Hub
+  * Get the deployment to recreate our pods with the latest version of multi-client

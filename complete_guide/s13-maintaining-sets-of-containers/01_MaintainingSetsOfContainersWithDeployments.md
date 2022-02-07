@@ -173,3 +173,7 @@ docker build -t stephengrider/multi-client:v5 .
 docker push stephengrider/multi-client:v5
 kubectl set image deployment/client-deployment client=stephengrider/multi-client:v5
 ```
+
+## Multiple Docker Installations
+
+* Lecture does not apply due to using Docker Desktop Kubernetes and not Minikube.

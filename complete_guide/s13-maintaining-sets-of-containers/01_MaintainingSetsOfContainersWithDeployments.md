@@ -144,3 +144,20 @@ kubectl get deployment
 * Rebuild the client image.
 * Push to Docker Hub.
 * Update `client-deployment.yaml`
+
+## Triggering Deployment Updates
+
+* Get the deployment to recreate our pods with the latest version of multi-client.
+* Convincing a deployment with the latest version of an image is not the easiest thing to do.
+* Kubernetes Issue 33664 (Sep 28, 2016).
+* Why is this so challenging?
+  * Nothing in the deployment yaml has changed.
+  * Kubernetes will reject the update since nothing has changed.
+* How can we do this?
+  * Manually delete pods to get the deployment to recreate them with the latest version.
+    * Deleting pods manually seems silly.
+  * Tag built images with a real version number and specify that version in the config file.
+    * Adds an extra step in the production deployment process.
+    * We are not allowed to use environment variables in config files.
+  * Use an imperative command to update the image version that the deployment should use.
+    * Uses an imperative command.

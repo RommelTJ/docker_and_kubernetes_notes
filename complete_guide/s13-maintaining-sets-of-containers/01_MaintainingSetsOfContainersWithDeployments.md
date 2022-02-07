@@ -177,3 +177,7 @@ kubectl set image deployment/client-deployment client=stephengrider/multi-client
 ## Multiple Docker Installations
 
 * Lecture does not apply due to using Docker Desktop Kubernetes and not Minikube.
+
+## Reconfiguring Docker CLI
+
+* Lecture does not apply due to using Docker Desktop Kubernetes and not Minikube.

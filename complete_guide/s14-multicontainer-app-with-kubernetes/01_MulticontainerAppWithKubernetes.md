@@ -10,3 +10,18 @@
   * Test locally on Minikube (or Docker Desktop)
   * Create a GitHub / Travis flow to build images and deploy
   * Deploy app to a Cloud Provider
+
+## A Quick Checkpoint
+
+* There's a zip files with files.
+* Let's make sure everything still works.
+
+```
+docker-compose up --build
+docker-compose up
+http://localhost/
+
+docker-compose -f docker-compose-dev.yml up --build
+docker-compose -f docker-compose-dev.yml up
+http://localhost:3050/
+```

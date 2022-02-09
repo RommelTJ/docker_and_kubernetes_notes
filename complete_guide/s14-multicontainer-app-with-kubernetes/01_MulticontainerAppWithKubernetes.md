@@ -25,3 +25,11 @@ docker-compose -f docker-compose-dev.yml up --build
 docker-compose -f docker-compose-dev.yml up
 http://localhost:3050/
 ```
+
+## Recreating the Deployment
+
+* Deleted travis file.
+* Deleted Docker compose file.
+* Deleted nginx image.
+* Created k8s folder for 11 config files.
+* Added `client-deployment.yaml` file.

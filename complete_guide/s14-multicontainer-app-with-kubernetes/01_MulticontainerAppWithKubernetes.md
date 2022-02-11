@@ -33,3 +33,9 @@ http://localhost:3050/
 * Deleted nginx image.
 * Created k8s folder for 11 config files.
 * Added `client-deployment.yaml` file.
+
+## The NodePort vs ClusterIP Services
+
+* A NodePort exposes a set of pods to the outside world (only good for dev purposes)
+* A ClusterIP exposes a set of pods to other objects in the cluster
+  * Thus, you still need an Ingress service for the outside world.

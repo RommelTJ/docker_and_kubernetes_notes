@@ -39,3 +39,7 @@ http://localhost:3050/
 * A NodePort exposes a set of pods to the outside world (only good for dev purposes)
 * A ClusterIP exposes a set of pods to other objects in the cluster
   * Thus, you still need an Ingress service for the outside world.
+
+## The Cluster IP Config
+
+See `client-cluster-ip-service.yaml`.

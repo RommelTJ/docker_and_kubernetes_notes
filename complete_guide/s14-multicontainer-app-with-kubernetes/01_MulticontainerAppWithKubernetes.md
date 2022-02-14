@@ -43,3 +43,20 @@ http://localhost:3050/
 ## The Cluster IP Config
 
 See `client-cluster-ip-service.yaml`.
+
+## Applying Multiple Files with Kubectl
+
+```
+kubectl get deployments
+kubectl delete deployment client-deployment
+kubectl get deployments
+
+kubectl get services
+kubectl delete service client-node-port
+kubectl get services
+
+kubectl apply -f k8s
+kubectl get deployments
+kubectl get pods
+kubectl get services
+```

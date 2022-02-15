@@ -60,3 +60,7 @@ kubectl get deployments
 kubectl get pods
 kubectl get services
 ```
+
+## Express API Deployment Config
+
+See `server-deployment.yaml`

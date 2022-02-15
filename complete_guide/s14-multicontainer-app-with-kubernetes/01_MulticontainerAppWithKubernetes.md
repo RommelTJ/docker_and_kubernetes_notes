@@ -64,3 +64,7 @@ kubectl get services
 ## Express API Deployment Config
 
 See `server-deployment.yaml`
+
+## ClusterIP for the Express API
+
+See `server-cluster-ip-service.yaml`

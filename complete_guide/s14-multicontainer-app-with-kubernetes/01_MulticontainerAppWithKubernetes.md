@@ -68,3 +68,9 @@ See `server-deployment.yaml`
 ## ClusterIP for the Express API
 
 See `server-cluster-ip-service.yaml`
+
+## Combining Config Into Single Files
+
+* Having to create separate files for each object can be cumbersome.
+* You can combine configs on a single file with a `---`.
+* We don't do this because it makes sense to separate what objects exist in your cluster.

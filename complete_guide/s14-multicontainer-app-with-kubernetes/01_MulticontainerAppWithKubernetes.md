@@ -74,3 +74,7 @@ See `server-cluster-ip-service.yaml`
 * Having to create separate files for each object can be cumbersome.
 * You can combine configs on a single file with a `---`.
 * We don't do this because it makes sense to separate what objects exist in your cluster.
+
+## The Worker Deployment
+
+See `worker-deployment.yaml`

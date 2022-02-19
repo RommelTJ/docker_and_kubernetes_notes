@@ -78,3 +78,14 @@ See `server-cluster-ip-service.yaml`
 ## The Worker Deployment
 
 See `worker-deployment.yaml`
+
+## Reapplying a Batch of Config Files
+
+```
+kubectl apply -f k8s
+kubectl get pods
+kubectl get deployments
+kubectl get services
+kubectl get pods
+kubectl logs server-deployment-58665d5c78-45tf8
+```

@@ -95,3 +95,9 @@ kubectl logs server-deployment-58665d5c78-45tf8
 See `redis-deployment.yaml`.
 See `redis-cluster-ip-service.yaml`.
 Then: `kubectl apply -f k8s`
+
+## Last Set of Boring Config
+
+See `postgres-deployment.yaml`.
+See `postgres-cluster-ip-service.yaml`.
+Then: `kubectl apply -f k8s`.

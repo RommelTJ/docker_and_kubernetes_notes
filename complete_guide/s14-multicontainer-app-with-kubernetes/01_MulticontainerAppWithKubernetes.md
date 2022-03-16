@@ -89,3 +89,9 @@ kubectl get services
 kubectl get pods
 kubectl logs server-deployment-58665d5c78-45tf8
 ```
+
+## Creating and Applying Redis Config
+
+See `redis-deployment.yaml`.
+See `redis-cluster-ip-service.yaml`.
+Then: `kubectl apply -f k8s`

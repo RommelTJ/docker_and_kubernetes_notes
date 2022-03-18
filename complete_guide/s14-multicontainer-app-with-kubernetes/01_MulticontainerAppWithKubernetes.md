@@ -109,3 +109,16 @@ Then: `kubectl apply -f k8s`.
 * If the pod crashes, we lose the filesystem. It's deleted and replaced with a new pod.
 * Volumes exist on the host machine, thus survive pod deletions.
 * Replicas and PVCs are hard. Don't do it.
+
+## Kubernetes Volumes
+
+* Volume in generic container terminology
+  * Some type of mechanism that allows a container to access a filesystem outside itself.
+* Volume in Kubernetes
+  * An object that allows a container to store data at the pod level.
+  * In Kubernetes, we have "Volume", "Persistent Volume", and "Persistent Volume Claim".
+  * We won't use a "Volume". We'll use a "Persistent Volume" or a "Persistent Volume Claim".
+* A "Volume" in a Kubernetes deployment lives inside a pod.
+  * If a container in a pod dies, a new container can connect to this volume.
+  * But if the pod itself dies, the volume goes with it.
+  * Thus, a Volume is not appropriate for a database.

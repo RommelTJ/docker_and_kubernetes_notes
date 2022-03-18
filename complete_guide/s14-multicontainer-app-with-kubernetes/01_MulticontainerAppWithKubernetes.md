@@ -122,3 +122,10 @@ Then: `kubectl apply -f k8s`.
   * If a container in a pod dies, a new container can connect to this volume.
   * But if the pod itself dies, the volume goes with it.
   * Thus, a Volume is not appropriate for a database.
+
+## Volumes vs Persistent Volumes
+
+* We discussed the "Volume" object already.
+* A "Persistent Volume" lives outside of a Pod. It's not tied to a container or pod.
+  * If a container dies, the new container can still connect to the Persistent Volume.
+  * If the pod dies, the new pod can still connect to the Persistent Volume.

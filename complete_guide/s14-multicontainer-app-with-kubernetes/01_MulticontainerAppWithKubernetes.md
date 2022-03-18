@@ -101,3 +101,11 @@ Then: `kubectl apply -f k8s`
 See `postgres-deployment.yaml`.
 See `postgres-cluster-ip-service.yaml`.
 Then: `kubectl apply -f k8s`.
+
+## The need for Volumes with Databases
+
+* PVC = Persistent Volume Claim.
+* Postgres takes data and writes it to a filesystem.
+* If the pod crashes, we lose the filesystem. It's deleted and replaced with a new pod.
+* Volumes exist on the host machine, thus survive pod deletions.
+* Replicas and PVCs are hard. Don't do it.

@@ -141,3 +141,15 @@ Then: `kubectl apply -f k8s`.
 ## Claim Config Files
 
 See `database-persistent-volume-claim.yaml`.
+
+## Persistent Volume Access Modes
+
+* Reminder: A Persistent Volume Claim is not storage. It's a storage option.
+* Access Modes:
+  * ReadWriteOnce
+    * Can be used by a single node.
+  * ReadOnlyMany
+    * Multiple nodes can read from this.
+  * ReadWriteMany
+    * Can be read and written to by many nodes.
+* "resources" is specifying we need 2 GB of space.

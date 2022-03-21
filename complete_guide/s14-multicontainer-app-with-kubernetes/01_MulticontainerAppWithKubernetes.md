@@ -172,3 +172,10 @@ See `database-persistent-volume-claim.yaml`.
 * Updated `postgres-deployment.yaml` to designate a PVC.
 * mountPath is the path to the container.
 * subPath is specific to postgres.
+
+## Applying a PVC
+
+* `kubectl apply -f k8s`
+* `kubectl get pods`
+* `kubectl get pv`
+* `kubectl get pvc`

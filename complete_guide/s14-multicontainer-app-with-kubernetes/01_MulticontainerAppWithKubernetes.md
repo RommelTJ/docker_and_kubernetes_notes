@@ -185,3 +185,8 @@ See `database-persistent-volume-claim.yaml`.
 * See `redis-cluster-ip-service.yaml` to get redis host name.
 * Most environment variables are going to be constants.
 * But not PGPASSWORD.
+
+## Adding Environment Variables to Config
+
+* See updates to `worker-deployment.yaml`.
+* See updates to `server-deployment.yaml`.

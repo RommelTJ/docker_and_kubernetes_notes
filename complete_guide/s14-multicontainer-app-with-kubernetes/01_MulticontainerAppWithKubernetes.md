@@ -179,3 +179,9 @@ See `database-persistent-volume-claim.yaml`.
 * `kubectl get pods`
 * `kubectl get pv`
 * `kubectl get pvc`
+
+## Defining Environment Variables
+
+* See `redis-cluster-ip-service.yaml` to get redis host name.
+* Most environment variables are going to be constants.
+* But not PGPASSWORD.

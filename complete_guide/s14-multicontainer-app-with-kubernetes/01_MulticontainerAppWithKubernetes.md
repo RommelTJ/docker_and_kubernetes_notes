@@ -203,3 +203,9 @@ See `database-persistent-volume-claim.yaml`.
 * See update to `server-deployment.yaml`
 * See update to `postgres-deployment.yaml`
 * Apply: `kubectl apply -f k8s`
+
+## Environment Variables as Strings
+
+* Addes quotes around numbers in `server-deployment.yaml` and `worker-deployment.yaml`.
+* Apply: `kubectl apply -f k8s`
+* `kubectl get pods`

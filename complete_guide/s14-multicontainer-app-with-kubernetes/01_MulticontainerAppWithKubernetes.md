@@ -166,3 +166,9 @@ See `database-persistent-volume-claim.yaml`.
   * Azure Disk
   * AWS Block Store
   * And more in Kubernetes docs.
+
+## Designating a PVC in a Pod Template
+
+* Updated `postgres-deployment.yaml` to designate a PVC.
+* mountPath is the path to the container.
+* subPath is specific to postgres.

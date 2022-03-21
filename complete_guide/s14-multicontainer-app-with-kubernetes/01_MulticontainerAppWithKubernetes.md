@@ -197,3 +197,9 @@ See `database-persistent-volume-claim.yaml`.
 * Using an imperative command:
   * `kubectl create secret generic pgpassword --from-literal PGPASSWORD=password123`
   * `kubectl get secrets`
+
+## Passing Secrets as Environment Variables
+
+* See update to `server-deployment.yaml`
+* See update to `postgres-deployment.yaml`
+* Apply: `kubectl apply -f k8s`

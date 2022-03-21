@@ -129,3 +129,11 @@ Then: `kubectl apply -f k8s`.
 * A "Persistent Volume" lives outside of a Pod. It's not tied to a container or pod.
   * If a container dies, the new container can still connect to the Persistent Volume.
   * If the pod dies, the new pod can still connect to the Persistent Volume.
+
+## Persistent Volumes vs Persistent Volume Claims
+
+* Imagine you are the Pod Config.
+* A Persistent Volume Claim are like an advertisement for storage options.
+* Kubernetes is like a salesperson.
+* Statically provisioned Persistent Volumes are like the store room for the sales person.
+* Dynamically provisioned Persistent Volumes are like the options made on demand on a factory.

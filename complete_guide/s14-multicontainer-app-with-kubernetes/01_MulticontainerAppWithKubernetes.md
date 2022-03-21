@@ -190,3 +190,10 @@ See `database-persistent-volume-claim.yaml`.
 
 * See updates to `worker-deployment.yaml`.
 * See updates to `server-deployment.yaml`.
+
+## Creating an Encoded Secret
+
+* Use a Secret Kubernetes Object to securely store a password.
+* Using an imperative command:
+  * `kubectl create secret generic pgpassword --from-literal PGPASSWORD=password123`
+  * `kubectl get secrets`

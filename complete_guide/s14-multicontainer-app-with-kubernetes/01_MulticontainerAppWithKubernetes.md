@@ -153,3 +153,16 @@ See `database-persistent-volume-claim.yaml`.
   * ReadWriteMany
     * Can be read and written to by many nodes.
 * "resources" is specifying we need 2 GB of space.
+
+## Where does Kubernetes Allocate Persistent Volumes?
+
+* On your computer, the only place storage can be allocated is on your hard drive.
+  * kubectl get storageClass
+  * "standard" is the default option.
+  * kubectl describe storageClass
+* In the cloud, you have many more options
+  * Google Cloud Persistent Disk
+  * Azure File
+  * Azure Disk
+  * AWS Block Store
+  * And more in Kubernetes docs.

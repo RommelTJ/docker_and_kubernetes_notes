@@ -137,3 +137,7 @@ Then: `kubectl apply -f k8s`.
 * Kubernetes is like a salesperson.
 * Statically provisioned Persistent Volumes are like the store room for the sales person.
 * Dynamically provisioned Persistent Volumes are like the options made on demand on a factory.
+
+## Claim Config Files
+
+See `database-persistent-volume-claim.yaml`.

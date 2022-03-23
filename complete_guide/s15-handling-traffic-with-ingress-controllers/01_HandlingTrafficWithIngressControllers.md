@@ -15,3 +15,13 @@
   * A Load Balancer will only give you access to a set of pods.
   * We need access to multi-client and multi-server
   * Use an Ingress Service instead.
+
+## Quick Notes on Ingresses
+
+* There are many types of Ingresses
+* We will use a specific type of Ingress: Nginx Ingress.
+* We are using ingress-nginx, a community led project.
+  * Setup of ingress-nginx changes depending on your environment (local, GC, AWS, Azure)
+  * We are going to set up ingress-nginx on local and Google Cloud (GC).
+* We are not using kubernetes-ingress, a project led by company nginx.
+* When googling, search for the right one.

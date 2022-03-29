@@ -25,3 +25,13 @@
   * We are going to set up ingress-nginx on local and Google Cloud (GC).
 * We are not using kubernetes-ingress, a project led by company nginx.
 * When googling, search for the right one.
+
+## Behind the Scenes of Ingress
+
+* Ingress routing rules to get traffic to services.
+  * The ingress config has a set of configuration rules describing how traffic should be routed.
+* The controller for our Ingress works to make sure these routing rules are set up.
+* Results in created Pod running nginx that handles routing.
+* We are using ingress-nginx.
+  * With ingress-nginx, the Ingress Controller and the thing that routes traffic is the same thing.
+  * With kubernetes-nginx, the Ingress Controller and the thing that routes traffic are different things.

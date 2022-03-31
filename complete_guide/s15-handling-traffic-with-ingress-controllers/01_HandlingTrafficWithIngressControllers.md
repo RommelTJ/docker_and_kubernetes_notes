@@ -50,3 +50,7 @@
   * ingress-nginx is aware of operating inside a Kubernetes cluster and has code to handle it.
   * It makes it so you don't have to manually forward traffic to ClusterIP Services.
   * It allows features like sticky servers and other features.
+
+## Setting up Ingress Locally
+
+`kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.1.2/deploy/static/provider/cloud/deploy.yaml`

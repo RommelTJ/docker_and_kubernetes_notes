@@ -64,3 +64,21 @@ Then run: `kubectl apply -f k8s`
 ## Testing Ingress Locally
 
 `http://localhost`
+
+## Minikube Dashboard
+
+Minikube has a dashboard. You can access it via `minikube dashboard`.  
+
+Docker Desktop also has one, but you have to install it:
+1. `kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.5.0/aio/deploy/recommended.yaml`
+2. `dash-admin-user.yaml`
+3. `kubectl apply -f dash-admin-user.yaml`
+4. `dash-clusterrole.yaml`
+5. `kubectl apply -f dash-clusterrole.yaml`
+6. Start proxy: `kubectl proxy`
+7. Visit: http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
+8. Obtain token with: `kubectl -n kubernetes-dashboard get secret $(kubectl -n kubernetes-dashboard get sa/admin-user -o jsonpath="{.secrets[0].name}") -o go-template="{{.data.token | base64decode}}"`  
+9. Copy token and use it to log in.
+10. You will be redirected to the Kubernetes Dashboard.
+
+https://github.com/kubernetes/dashboard/blob/master/docs/user/access-control/creating-sample-user.md

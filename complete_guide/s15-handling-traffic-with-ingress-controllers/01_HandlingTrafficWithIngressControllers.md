@@ -60,3 +60,7 @@
 See `ingress-service.yaml`
 
 Then run: `kubectl apply -f k8s`
+
+## Testing Ingress Locally
+
+`http://localhost`

@@ -12,3 +12,6 @@ Google Cloud will cost money. Probably around $50/month.
   * Far, far easier to poke around Kubernetes on Google Cloud
   * Excellent documentation for beginners.
 
+## Creating a GitHub Repo
+
+https://github.com/RommelTJ/multi-k8s

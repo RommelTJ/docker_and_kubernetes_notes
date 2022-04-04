@@ -15,3 +15,7 @@ Google Cloud will cost money. Probably around $50/month.
 ## Creating a GitHub Repo
 
 https://github.com/RommelTJ/multi-k8s
+
+## Linking the GitHub Repo to Travis
+
+Set up the repo on Travis.

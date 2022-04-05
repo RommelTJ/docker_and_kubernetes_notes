@@ -25,3 +25,7 @@ Set up the repo on Travis.
 * Go to https://console.cloud.google.com/
 * New Project > "multi-k8s" > Create
 * Toggle to "multi-k8s" project
+
+## Linking a Billing Account
+
+* Billing > Manage Billing Account > Set Account

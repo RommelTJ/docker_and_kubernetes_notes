@@ -19,3 +19,9 @@ https://github.com/RommelTJ/multi-k8s
 ## Linking the GitHub Repo to Travis
 
 Set up the repo on Travis.
+
+## Creating a Google Cloud Project
+
+* Go to https://console.cloud.google.com/
+* New Project > "multi-k8s" > Create
+* Toggle to "multi-k8s" project

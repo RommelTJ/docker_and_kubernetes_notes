@@ -97,6 +97,13 @@ travis
 ```
 
 ## Encrypting a Service Account File
+
+```
+travis login --github-token YOUR_PERSONAL_TOKEN --com
+travis encrypt-file service-account.json -r RommelTJ/multi-k8s --com
+openssl aes-256-cbc -K $encrypted_9f3b5599b056_key -iv $encrypted_9f3b5599b056_iv -in service-account.json.enc -out service-account.json -d
+```
+
 ## More Google Cloud CLI Config
 ## Running Tests with Travis
 ## Custom Deployment Providers

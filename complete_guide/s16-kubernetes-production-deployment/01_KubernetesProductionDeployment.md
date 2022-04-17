@@ -57,6 +57,18 @@ See previous section.
 Clicking around on the Google dashboard.
 
 ## Travis Deployment Overview
+
+Travis Config file
+* Install Google Cloud SDK CLI
+* Configure the SDK without Google Cloud auth info
+* Login to Docker CLI
+* Build the 'test' version of multi-client
+* Run tests
+* If tests are successful, run a script to deploy newest images
+* Build all our images, tag each one, push each to docker hub
+* Apply all configs in the 'k8s' folder
+* Imperatively set latest images on each deployment
+
 ## Installing the Google Cloud SDK
 ## Generating a Service Account
 ## Running Travis CLI in a container

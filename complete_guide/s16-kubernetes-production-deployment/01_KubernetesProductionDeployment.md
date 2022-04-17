@@ -53,6 +53,9 @@ Set up the repo on Travis.
 See previous section.
 
 ## Kubernetes Dashboard on Google Cloud
+
+Clicking around on the Google dashboard.
+
 ## Travis Deployment Overview
 ## Installing the Google Cloud SDK
 ## Generating a Service Account

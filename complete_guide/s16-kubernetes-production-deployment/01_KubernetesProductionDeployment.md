@@ -117,6 +117,9 @@ See `.travis.yml`.
 See `.travis.yml`.
 
 ## Unique Deployment Images
+
+See `deploy.sh`.
+
 ## Unique Tags for Built Images
 ## Updating the Deployment Script
 ## Configuring the Google Cloud CLI on Cloud Console

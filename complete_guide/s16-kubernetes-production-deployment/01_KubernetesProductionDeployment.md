@@ -89,6 +89,13 @@ See `.travis.yml`.
 9. The JSON key file should now download to your computer.
 
 ## Running Travis CLI in a container
+
+```
+docker run -it -v $(pwd):/app ruby:2.4 sh
+gem install travis
+travis
+```
+
 ## Encrypting a Service Account File
 ## More Google Cloud CLI Config
 ## Running Tests with Travis

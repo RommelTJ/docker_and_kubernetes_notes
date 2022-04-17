@@ -49,6 +49,9 @@ Set up the repo on Travis.
    table.
 
 ## Creating a Cluster with Google Cloud
+
+See previous section.
+
 ## Kubernetes Dashboard on Google Cloud
 ## Travis Deployment Overview
 ## Installing the Google Cloud SDK

@@ -70,6 +70,9 @@ Travis Config file
 * Imperatively set latest images on each deployment
 
 ## Installing the Google Cloud SDK
+
+See `.travis.yml`.
+
 ## Generating a Service Account
 ## Running Travis CLI in a container
 ## Encrypting a Service Account File

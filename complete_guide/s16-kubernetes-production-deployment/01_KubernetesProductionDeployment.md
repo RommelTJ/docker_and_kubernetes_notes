@@ -190,5 +190,15 @@ Commit our work, push to main (or master).
 Verify it's running on Travis, DockerHub is showing tags, and Google Cloud is showing updates.
 
 ## A Workflow for Changing in Prod
+
+* Check out a branch.
+* Make changes.
+* Commit changes.
+* Push to GitHub branch.
+* Create a PR.
+* Wait for tests to show up 'green'.
+* Merge the PR.
+* See changes appear on prod.
+
 ## Merging a PR for deployment
 ## Version Bump

@@ -140,6 +140,12 @@ gcloud container clusters get-credentials multi-cluster
 ```
 
 ## Creating a Secret on Google Cloud
+
+Click `Activate Cloud Shell` on Google Cloud, then:
+```
+kubectl create secret generic pgpassword --from-literal PGPASSWORD=REDACTED
+```
+
 ## Helm Setup
 ## Kubernetes Security with RBAC
 ## Assigning Tiller a Service Account

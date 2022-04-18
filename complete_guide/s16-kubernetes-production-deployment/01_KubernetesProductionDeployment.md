@@ -185,7 +185,6 @@ In Google Cloud, under Workloads, you can see the nginx controller. It also sets
 
 Commit our work, push to main (or master).
 
-## Did I really type that?
 ## Verifying deployment
 ## A Workflow for Changing in Prod
 ## Merging a PR for deployment

@@ -37,3 +37,7 @@ helm install \
 `kubectl apply -f https://github.com/jetstack/cert-manager/releases/download/v1.2.0/cert-manager.crds.yaml`
 
 Official docs for reference: https://cert-manager.io/docs/installation/kubernetes/#installing-with-helm
+
+## Cert Manager Install
+
+See steps above.

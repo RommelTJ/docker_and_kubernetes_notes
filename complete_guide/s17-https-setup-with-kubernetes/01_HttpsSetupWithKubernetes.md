@@ -11,3 +11,8 @@
 ## Domain Purchase
 
 Purchase the domain.
+
+## Domain Name Setup
+
+On Kubernetes Google Cloud Dashboard, add the DNS settings for custom resource records to forward to the IP address
+of the Kubernetes service, once for .com A-record and once for www (CNAME).

@@ -182,6 +182,9 @@ when visiting the IP address, this is perfectly expected.
 In Google Cloud, under Workloads, you can see the nginx controller. It also sets up a Load Balancer.
 
 ## Finally - deployment!
+
+Commit our work, push to main (or master).
+
 ## Did I really type that?
 ## Verifying deployment
 ## A Workflow for Changing in Prod

@@ -96,3 +96,7 @@ You can verify from the Google Cloud Console by typing `kubectl get certificates
 ## Ingress Config for HTTPS
 
 See `ingress-service.yaml`.
+
+## It worked
+
+Https shows up and redirects from http work.

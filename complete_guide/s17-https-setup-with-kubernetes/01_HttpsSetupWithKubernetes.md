@@ -64,3 +64,9 @@ solvers:
 ## Issuer Config File
 
 See `issuer.yaml`.
+
+## Required Update for the Certificate
+
+1. Update the API version used:  
+`apiVersion: cert-manager.io/v1`
+2. Remove the acme challenge from the certificate spec.

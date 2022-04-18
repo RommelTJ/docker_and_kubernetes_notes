@@ -186,6 +186,9 @@ In Google Cloud, under Workloads, you can see the nginx controller. It also sets
 Commit our work, push to main (or master).
 
 ## Verifying deployment
+
+Verify it's running on Travis, DockerHub is showing tags, and Google Cloud is showing updates.
+
 ## A Workflow for Changing in Prod
 ## Merging a PR for deployment
 ## Version Bump

@@ -169,6 +169,9 @@ Skipped.
 Skipped.
 
 ## Ingress-nginx with Helm
+
+See above under Helm Setup.
+
 ## Quick note about the default backend
 ## The result of Ingress-nginx
 ## Finally - deployment!

@@ -60,3 +60,7 @@ solvers:
       ingress:
         class: nginx
 ```
+
+## Issuer Config File
+
+See `issuer.yaml`.

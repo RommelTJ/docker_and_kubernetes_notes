@@ -121,6 +121,9 @@ See `.travis.yml`.
 See `deploy.sh`.
 
 ## Unique Tags for Built Images
+
+We use the git SHA to generate unique tags.  It also lets you verify which version you're developing on.
+
 ## Updating the Deployment Script
 ## Configuring the Google Cloud CLI on Cloud Console
 ## Creating a Secret on Google Cloud

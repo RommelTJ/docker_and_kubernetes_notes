@@ -178,6 +178,9 @@ A default backend no longer ships with ingress-nginx, so, if you only see a cont
 when visiting the IP address, this is perfectly expected.
 
 ## The result of Ingress-nginx
+
+In Google Cloud, under Workloads, you can see the nginx controller. It also sets up a Load Balancer.
+
 ## Finally - deployment!
 ## Did I really type that?
 ## Verifying deployment

@@ -88,3 +88,7 @@ Deploying the updated Ingress should trigger the certificate to be issued.
 ## Verifying the Certificate
 
 You can verify from the Google Cloud Console by typing `kubectl get certificates` or `kubectl describe certificates`.
+
+## Required Update for the HTTPS Ingress
+
+`certmanager.k8s.io/cluster-issuer: "letsencrypt-prod"` is now: `cert-manager.io/cluster-issuer: "letsencrypt-prod"`

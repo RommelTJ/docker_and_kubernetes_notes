@@ -147,6 +147,19 @@ kubectl create secret generic pgpassword --from-literal PGPASSWORD=REDACTED
 ```
 
 ## Helm Setup
+
+Helm is a third-party software that can be used to install Charts. Charts are pre-configured Kubernetes resources.
+
+Click `Activate Cloud Shell` on Google Cloud, then:
+```
+curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
+chmod 700 get_helm.sh
+./get_helm.sh
+
+helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+helm install my-release ingress-nginx/ingress-nginx
+```
+
 ## Kubernetes Security with RBAC
 ## Assigning Tiller a Service Account
 ## Ingress-nginx with Helm

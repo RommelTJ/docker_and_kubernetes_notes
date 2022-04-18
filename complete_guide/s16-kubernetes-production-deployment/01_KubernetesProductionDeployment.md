@@ -129,6 +129,16 @@ We use the git SHA to generate unique tags.  It also lets you verify which versi
 See `.travis.yml` and `deploy.sh`.
 
 ## Configuring the Google Cloud CLI on Cloud Console
+
+Need to create a PGPASSWORD to create a secret on Google Cloud.
+
+Click `Activate Cloud Shell` on Google Cloud, then: 
+```
+gcloud config set project multi-k8s-346314
+gcloud config set compute/zone us-west1-a
+gcloud container clusters get-credentials multi-cluster
+```
+
 ## Creating a Secret on Google Cloud
 ## Helm Setup
 ## Kubernetes Security with RBAC

@@ -7,3 +7,7 @@
   * Kubernetes cluster will issue a request to LetsEncrypt for a certificate.
   * LetsEncrypt issues a request to the cluster to verify the request on a specific route.
   * If it all checks out, LetsEncrypt issues a certificate for 90 days.
+
+## Domain Purchase
+
+Purchase the domain.

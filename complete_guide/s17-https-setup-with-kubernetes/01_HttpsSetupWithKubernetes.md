@@ -41,3 +41,10 @@ Official docs for reference: https://cert-manager.io/docs/installation/kubernete
 ## Cert Manager Install
 
 See steps above.
+
+## How to Wire Up Cert Manager
+
+CertManager is a pod that gets set up by Helm and handles the certificate for us.  
+We need to create two objects:  
+- Issuer. A Config file telling the cert how to reach out to LetsEncrypt to get the certificate from.
+- Certificate. A config file describing the details about the certificate that should be obtained.

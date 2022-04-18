@@ -165,6 +165,9 @@ helm install my-release ingress-nginx/ingress-nginx
 Skipped.
 
 ## Assigning Tiller a Service Account
+
+Skipped.
+
 ## Ingress-nginx with Helm
 ## Quick note about the default backend
 ## The result of Ingress-nginx

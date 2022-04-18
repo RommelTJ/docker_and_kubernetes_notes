@@ -74,3 +74,7 @@ See `issuer.yaml`.
 ## Certificate Config File
 
 See `certificate.yaml`.
+
+## Deploying Changes
+
+Push to main.

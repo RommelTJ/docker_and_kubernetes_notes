@@ -48,3 +48,15 @@ CertManager is a pod that gets set up by Helm and handles the certificate for us
 We need to create two objects:  
 - Issuer. A Config file telling the cert how to reach out to LetsEncrypt to get the certificate from.
 - Certificate. A config file describing the details about the certificate that should be obtained.
+
+## Required Update for Issuer
+
+1. Update apiVersion:  
+`apiVersion: cert-manager.io/v1`
+2. Add a solvers property:  
+```
+solvers:
+  - http01:
+      ingress:
+        class: nginx
+```

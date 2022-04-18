@@ -173,6 +173,10 @@ Skipped.
 See above under Helm Setup.
 
 ## Quick note about the default backend
+
+A default backend no longer ships with ingress-nginx, so, if you only see a controller and you get a 404 Not Found 
+when visiting the IP address, this is perfectly expected.
+
 ## The result of Ingress-nginx
 ## Finally - deployment!
 ## Did I really type that?

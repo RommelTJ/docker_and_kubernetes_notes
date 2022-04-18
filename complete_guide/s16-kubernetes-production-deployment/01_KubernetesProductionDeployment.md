@@ -203,5 +203,3 @@ Verify it's running on Travis, DockerHub is showing tags, and Google Cloud is sh
 ## Merging a PR for deployment
 
 After tests run, merge the PR. Wait for the deployment.
-
-## Version Bump

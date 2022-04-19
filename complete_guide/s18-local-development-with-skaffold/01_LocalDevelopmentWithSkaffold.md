@@ -27,3 +27,7 @@ See `skaffold.yaml`.
 See `skaffold.yaml` and `Dockerfile.dev`.
 
 Then run `skaffold dev`.
+
+## Live Sync Changes
+
+See above.

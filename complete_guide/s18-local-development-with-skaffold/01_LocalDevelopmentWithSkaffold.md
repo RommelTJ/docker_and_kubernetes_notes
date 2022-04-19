@@ -31,3 +31,7 @@ Then run `skaffold dev`.
 ## Live Sync Changes
 
 See above.
+
+## Automatic shutdown
+
+Ctrl+C will automatically remove pods automatically.

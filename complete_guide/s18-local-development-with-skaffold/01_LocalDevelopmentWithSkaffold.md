@@ -21,3 +21,9 @@ skaffold version
 ## The Skaffold Config File
 
 See `skaffold.yaml`.
+
+## Skaffold Sync Update
+
+See `skaffold.yaml` and `Dockerfile.dev`.
+
+Then run `skaffold dev`.

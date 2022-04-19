@@ -15,4 +15,9 @@ Instructions: skaffold.dev/docs/getting-started
 
 ```
 brew install skaffold
+skaffold version
 ```
+
+## The Skaffold Config File
+
+See `skaffold.yaml`.

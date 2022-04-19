@@ -35,3 +35,7 @@ See above.
 ## Automatic shutdown
 
 Ctrl+C will automatically remove pods automatically.
+
+## Testing Live Sync with the API Server
+
+More configurations for server and client. See `skaffold.yaml`.
